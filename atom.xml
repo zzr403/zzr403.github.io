@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-21T15:28:33.061Z</updated>
+  <updated>2019-08-21T15:37:23.817Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,16 @@
     <link href="http://yoursite.com/2019/08/21/title/"/>
     <id>http://yoursite.com/2019/08/21/title/</id>
     <published>2019-08-21T15:20:42.000Z</published>
-    <updated>2019-08-21T15:28:33.061Z</updated>
+    <updated>2019-08-21T15:37:23.817Z</updated>
     
-    <content type="html"><![CDATA[<p>你好，欢迎来到我的博客。</p><p>##这是个什么样的网址呢</p><p>###我打算将其作为一个笔记本，整理我所学到的东西</p><p>对其做一些记录</p>]]></content>
+    <content type="html"><![CDATA[<p>你好，欢迎来到我的博客。</p><h2 id="这是个什么样的网址呢"><a href="#这是个什么样的网址呢" class="headerlink" title="这是个什么样的网址呢"></a>这是个什么样的网址呢</h2><h3 id="我打算将其作为一个笔记本，整理我所学到的东西"><a href="#我打算将其作为一个笔记本，整理我所学到的东西" class="headerlink" title="我打算将其作为一个笔记本，整理我所学到的东西"></a>我打算将其作为一个笔记本，整理我所学到的东西</h3><p>对其做一些记录</p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;你好，欢迎来到我的博客。&lt;/p&gt;
-&lt;p&gt;##这是个什么样的网址呢&lt;/p&gt;
-&lt;p&gt;###我打算将其作为一个笔记本，整理我所学到的东西&lt;/p&gt;
-&lt;p&gt;对其做一些记录&lt;/p&gt;
-
+&lt;h2 id=&quot;这是个什么样的网址呢&quot;&gt;&lt;a href=&quot;#这是个什么样的网址呢&quot; class=&quot;headerlink&quot; title=&quot;这是个什么样的网址呢&quot;&gt;&lt;/a&gt;这是个什么样的网址呢&lt;/h2&gt;&lt;h3 id=&quot;我打算将其作为一个笔记本，
       
     
     </summary>
