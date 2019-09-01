@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-08-23T16:11:38.462Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown笔记</title>
+    <link href="http://yoursite.com/2019/08/21/title/"/>
+    <id>http://yoursite.com/2019/08/21/title/</id>
+    <published>2019-08-21T15:20:42.000Z</published>
+    <updated>2019-08-23T16:11:38.462Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-设置级标题"><a href="#一-设置级标题" class="headerlink" title="一. 设置级标题"></a>一. 设置级标题</h2><p> &emsp;“## 级标题”<br> &emsp; #的数量为标题的级数 </p><h2 id="二-文本样式"><a href="#二-文本样式" class="headerlink" title="二.文本样式"></a>二.文本样式</h2><h3 id="1-粗体"><a href="#1-粗体" class="headerlink" title="1. 粗体"></a>1. <strong>粗体</strong></h3><p>&emsp;&emsp;** <strong>粗体</strong> **<br> &emsp;使用“**”括起来的在内容</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. <em>斜体</em></h3><p>&emsp;&emsp;* <em>斜体</em> *<br>&emsp;使用“*”括起来的内容</p><h3 id="3-删除线"><a href="#3-删除线" class="headerlink" title="3. 删除线"></a>3. <del>删除线</del></h3><p>&emsp;&emsp;<del>~ ~</del>删除线<del>~ ~</del><br>&emsp;使用“~~”括起来的内容  </p><h3 id="4-上角标-emsp-与-emsp-下角标"><a href="#4-上角标-emsp-与-emsp-下角标" class="headerlink" title="4. 上角标&emsp;与&emsp;下角标"></a>4. 上<sup>角标&emsp;</sup>与&emsp;下<sub>角标</sub></h3><p> &emsp;sup&emsp;/sup&emsp;上角标<br> &emsp;sub&emsp;/sub&emsp;下角标  </p><h2 id="三-段落格式"><a href="#三-段落格式" class="headerlink" title="三. 段落格式"></a>三. 段落格式</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一-设置级标题&quot;&gt;&lt;a href=&quot;#一-设置级标题&quot; class=&quot;headerlink&quot; title=&quot;一. 设置级标题&quot;&gt;&lt;/a&gt;一. 设置级标题&lt;/h2&gt;&lt;p&gt; &amp;emsp;“## 级标题”&lt;br&gt; &amp;emsp; #的数量为标题的级数 &lt;/p&gt;
+&lt;h2 i
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/08/21/hello-world/"/>
+    <id>http://yoursite.com/2019/08/21/hello-world/</id>
+    <published>2019-08-21T08:29:13.931Z</published>
+    <updated>2019-09-01T01:37:31.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="测试hexo-d"><a href="#测试hexo-d" class="headerlink" title="测试hexo d"></a>测试hexo d</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
