@@ -1,20 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>MY NOTES</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-23T16:11:38.462Z</updated>
+  <updated>2020-01-09T08:52:42.450Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>赵泽荣</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>postpython</title>
+    <link href="http://yoursite.com/2020/01/09/python%20note/"/>
+    <id>http://yoursite.com/2020/01/09/python note/</id>
+    <published>2020-01-09T06:38:01.000Z</published>
+    <updated>2020-01-09T08:52:42.450Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-markdown回忆"><a href="#一-markdown回忆" class="headerlink" title=" 一. markdown回忆 "></a><font color="red"> 一. markdown回忆 </font><font face="仿宋"><font color="#E6DE5"></font></font></h1><h3 id="a-标题（级标题）。。。。。。。。"><a href="#a-标题（级标题）。。。。。。。。" class="headerlink" title="a.标题（级标题）。。。。。。。。"></a>a.标题（级标题）。。。。。。。。</h3><h3 id="b-加粗、斜体、删除线。。。。。。"><a href="#b-加粗、斜体、删除线。。。。。。" class="headerlink" title="b.加粗、斜体、删除线。。。。。。*//~~"></a>b.加粗、斜体、删除线。。。。。。<em>*/</em>/~~</h3><h3 id="c-引用。。。。。。。。。。。。。-gt-gt"><a href="#c-引用。。。。。。。。。。。。。-gt-gt" class="headerlink" title="c.引用。。。。。。。。。。。。。&gt;&gt;"></a>c.引用。。。。。。。。。。。。。&gt;&gt;</h3><h3 id="d-分割线。。。。。。。。。。。。——-或-（三个以上）"><a href="#d-分割线。。。。。。。。。。。。——-或-（三个以上）" class="headerlink" title="d.分割线。。。。。。。。。。。。——-或***（三个以上）"></a>d.分割线。。。。。。。。。。。。——-或<strong>***</strong>（三个以上）</h3><h3 id="e-图片。。。。。。。。。。。。。。-图片alt-（图片地址’’图片title’’）"><a href="#e-图片。。。。。。。。。。。。。。-图片alt-（图片地址’’图片title’’）" class="headerlink" title="e.图片。。。。。。。。。。。。。。![图片alt]（图片地址’’图片title’’）"></a>e.图片。。。。。。。。。。。。。。![图片alt]（图片地址’’图片title’’）</h3><h3 id="f-超链接。。。。。。。。。。。。。-超链接名-（超链接地址-“超链接title”）"><a href="#f-超链接。。。。。。。。。。。。。-超链接名-（超链接地址-“超链接title”）" class="headerlink" title="f.超链接。。。。。。。。。。。。。[超链接名]（超链接地址 “超链接title”）"></a>f.超链接。。。。。。。。。。。。。[超链接名]（超链接地址 “超链接title”）</h3><h3 id="g-列表（有序、无序、嵌套）。。。。（-）（-）（-）-数字加点-三个空格"><a href="#g-列表（有序、无序、嵌套）。。。。（-）（-）（-）-数字加点-三个空格" class="headerlink" title="g.列表（有序、无序、嵌套）。。。。（- ）（+ ）（* ）/数字加点/三个空格"></a>g.列表（有序、无序、嵌套）。。。。（- ）（+ ）（* ）/数字加点/三个空格</h3><h3 id="h-表格"><a href="#h-表格" class="headerlink" title="h.表格"></a>h.表格</h3><table><thead><tr><th>姓名</th><th align="left">技能</th><th align="right">排行</th></tr></thead><tbody><tr><td>刘备</td><td align="left">关羽</td><td align="right">张飞</td></tr><tr><td>孙悟空</td><td align="left">孙悟饭</td><td align="right">孙悟天</td></tr><tr><td>### i.代码。。。。。。。。。。。。。。（’’’)</td><td align="left"></td><td align="right"></td></tr><tr><td>### j.流程图（暂时不需要）</td><td align="left"></td><td align="right"></td></tr><tr><td>### k.字体/颜色/尺寸。。。。。。。。。&lt;—font face/color/size=”字体/颜色/尺寸”—&gt;&lt;—/font—&gt;</td><td align="left"></td><td align="right"></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-markdown回忆&quot;&gt;&lt;a href=&quot;#一-markdown回忆&quot; class=&quot;headerlink&quot; title=&quot; 一. markdown回忆 &quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt; 一. markdown回忆 &lt;/font&gt;&lt;font f
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/09/06/%E9%A6%96%E9%A1%B5/"/>
+    <id>http://yoursite.com/2019/09/06/首页/</id>
+    <published>2019-09-06T14:19:43.936Z</published>
+    <updated>2019-09-06T14:19:44.131Z</updated>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0">    <title>我的个人网页</title>    </head><body>        <h1>我的简介</h1></body></html>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;&lt;meta name=&quot;generator&quot; content=&quot;Hexo 3.9.0&quot;&gt;
+    &lt;title&gt;我的个人网页&lt;/title&gt;
+
+    &lt;/head&gt;&lt;body&gt;
+        &lt;h1&gt;我的简介&lt;/h1
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>markdown笔记</title>
