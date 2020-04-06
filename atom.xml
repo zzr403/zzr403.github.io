@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-09T10:35:37.852Z</updated>
+  <updated>2020-04-06T07:46:54.236Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows系统的云服务器发布网页</title>
+    <link href="http://yoursite.com/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/"/>
+    <id>http://yoursite.com/2020/04/06/windows系统的云服务器发布网页/</id>
+    <published>2020-04-06T07:46:54.000Z</published>
+    <updated>2020-04-06T07:46:54.236Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-购买云服务器"><a href="#一-购买云服务器" class="headerlink" title="一.购买云服务器"></a>一.购买云服务器</h1><p>&emsp;&emsp;很多平台可以购买云服务器（如阿里云、腾讯云、华为云、百度云}  </p><h4 id="1-阿里云平台（https-www-aliyun-com-）"><a href="#1-阿里云平台（https-www-aliyun-com-）" class="headerlink" title="1. 阿里云平台（https://www.aliyun.com/）"></a>1. 阿里云平台（<a href="https://www.aliyun.com/）" target="_blank" rel="noopener">https://www.aliyun.com/）</a></h4><h4 id="2-腾讯云平台（https-cloud-tencent-com-）"><a href="#2-腾讯云平台（https-cloud-tencent-com-）" class="headerlink" title="2. 腾讯云平台（https://cloud.tencent.com/）"></a>2. 腾讯云平台（<a href="https://cloud.tencent.com/）" target="_blank" rel="noopener">https://cloud.tencent.com/）</a></h4><h1 id><a href="#" class="headerlink" title=" "></a> </h1><h1 id="-1"><a href="#-1" class="headerlink" title=" "></a> </h1><h1 id="二-云服务器设置"><a href="#二-云服务器设置" class="headerlink" title="二.云服务器设置"></a>二.云服务器设置</h1><p>我这里用的是阿里云服务器  </p><ol><li>在电脑左下角搜索框输入“远程桌面连接”，计算机输入自己云服务器提供的公网ip，用户名输入“Administrator”<br><img src="img/20200406114205.png" alt="20200406114205.png">  </li><li>输入云服务器设置的密码，即可进入服务器 <h1 id="三-设置IIS"><a href="#三-设置IIS" class="headerlink" title="三.设置IIS"></a>三.设置IIS</h1></li><li>打开控制面板<br><img src="img/1.png" alt="1.png">  </li><li>选择应用或关闭windows功能<br><img src="img/2.png" alt="2.png">  </li><li>开启IIS共能（Internet Information Services）<br><img src="img/3.png" alt="3.png">  </li><li>打开IIS<br>可在左下角搜索框直接搜索IIS，为了以后方便也可以直接在桌面设置快捷方式，或者固定至开始屏幕<h1 id="四-新建站点"><a href="#四-新建站点" class="headerlink" title="四.新建站点"></a>四.新建站点</h1></li><li>将建好的文件夹上传至服务器（可直接复制，在服务器粘贴）</li><li>打开IIS，新建一个站点。右击“网站”标签，选择添加网站，按下图进行设置<br><img src="img/5.png" alt="5.png">  </li><li>设置完毕后，点击浏览，即可在本地浏览器看自己做的网页<br><img src="img/6.png" alt="6.png">  <h1 id="五-设置防火墙"><a href="#五-设置防火墙" class="headerlink" title="五.设置防火墙"></a>五.设置防火墙</h1></li><li>打开 控制面板——&gt;系统和安全——&gt;windows defender防火墙，然后点开左边高级设置。如图<br><img src="img/7.png" alt="7.png">  </li><li>配置入站规则，点击左边入站规则<br><img src="img/8.png" alt="8.png"></li><li>单击 新建规则，规则类型选择端口<br><img src="img/9.png" alt="9.png"></li><li>规则应用选择”TCP”,选择特定本地端口，端口输入80。继续点击下一步<br><img src="img/10.png" alt="10.png"></li><li>选择允许连接，点击下一步<br><img src="img/11.png" alt="11.png"></li><li>默认都选择，不需要修改，点击下一步<br><img src="img/12.png" alt="12.png"></li><li>名称随便填一个，点击完成<br><img src="img/13.png" alt="13.png"><h1 id="六-设置安全组"><a href="#六-设置安全组" class="headerlink" title="六.设置安全组"></a>六.设置安全组</h1></li><li>打开自已的控制台</li><li>打开自己购买的服务器实例<br><img src="img/14.png" alt="14.png"></li><li>点击左侧本实例安全组<br><img src="img/15.png" alt="15.png"></li><li>点击配置<br><img src="img/16.png" alt="16.png"></li><li>选择添加安全组规则<br><img src="img/17.png" alt="17.png"></li><li>端口范围填入“80/8081” 授权对象填入0.0.0.0/0<br><img src="img/18.png" alt="18.png"><h1 id="六-在浏览器输入自己的服务器公网域名就可以使用了！！！"><a href="#六-在浏览器输入自己的服务器公网域名就可以使用了！！！" class="headerlink" title="六.在浏览器输入自己的服务器公网域名就可以使用了！！！"></a>六.在浏览器输入自己的服务器公网域名就可以使用了！！！</h1></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-购买云服务器&quot;&gt;&lt;a href=&quot;#一-购买云服务器&quot; class=&quot;headerlink&quot; title=&quot;一.购买云服务器&quot;&gt;&lt;/a&gt;一.购买云服务器&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;很多平台可以购买云服务器（如阿里云、腾讯云、华为云、百度云}  &lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>python note</title>
@@ -66,20 +87,19 @@
   </entry>
   
   <entry>
-    <title>markdown笔记</title>
+    <title>c语言文件学习note（一）</title>
     <link href="http://yoursite.com/2019/08/21/title/"/>
     <id>http://yoursite.com/2019/08/21/title/</id>
     <published>2019-08-21T15:20:42.000Z</published>
-    <updated>2019-08-23T16:11:38.462Z</updated>
+    <updated>2020-01-12T11:25:09.398Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="一-设置级标题"><a href="#一-设置级标题" class="headerlink" title="一. 设置级标题"></a>一. 设置级标题</h2><p> &emsp;“## 级标题”<br> &emsp; #的数量为标题的级数 </p><h2 id="二-文本样式"><a href="#二-文本样式" class="headerlink" title="二.文本样式"></a>二.文本样式</h2><h3 id="1-粗体"><a href="#1-粗体" class="headerlink" title="1. 粗体"></a>1. <strong>粗体</strong></h3><p>&emsp;&emsp;** <strong>粗体</strong> **<br> &emsp;使用“**”括起来的在内容</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. <em>斜体</em></h3><p>&emsp;&emsp;* <em>斜体</em> *<br>&emsp;使用“*”括起来的内容</p><h3 id="3-删除线"><a href="#3-删除线" class="headerlink" title="3. 删除线"></a>3. <del>删除线</del></h3><p>&emsp;&emsp;<del>~ ~</del>删除线<del>~ ~</del><br>&emsp;使用“~~”括起来的内容  </p><h3 id="4-上角标-emsp-与-emsp-下角标"><a href="#4-上角标-emsp-与-emsp-下角标" class="headerlink" title="4. 上角标&emsp;与&emsp;下角标"></a>4. 上<sup>角标&emsp;</sup>与&emsp;下<sub>角标</sub></h3><p> &emsp;sup&emsp;/sup&emsp;上角标<br> &emsp;sub&emsp;/sub&emsp;下角标  </p><h2 id="三-段落格式"><a href="#三-段落格式" class="headerlink" title="三. 段落格式"></a>三. 段落格式</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="一-文件操作方式"><a href="#一-文件操作方式" class="headerlink" title="一. 文件操作方式"></a>一. 文件操作方式</h2><h3 id="1-文件打开——fopen"><a href="#1-文件打开——fopen" class="headerlink" title="1.文件打开——fopen"></a>1.文件打开——fopen</h3><p>  （1）fp=fopen(“file.txt”,”w”)<br>  （2）fopen_s(&amp;fp,”file.txt”,”w”)</p><p>   <font color="red"> 注：对于VS编译器采用fopen_s.由于fopen_s更加安全，如下方gets_s雷同</font>  </p><h3 id="2-文件关闭——fclose"><a href="#2-文件关闭——fclose" class="headerlink" title="2.文件关闭——fclose"></a>2.文件关闭——fclose</h3><p> &emsp;&emsp; fclose(fp);  </p><h3 id="3-文件读写操作"><a href="#3-文件读写操作" class="headerlink" title="3.文件读写操作"></a>3.文件读写操作</h3><h4 id="1-gets-str"><a href="#1-gets-str" class="headerlink" title="(1).gets(str);"></a>(1).gets(str);</h4><p>&emsp;读入字符串</p><h4 id="2-gets-s-str"><a href="#2-gets-s-str" class="headerlink" title="(2). gets_s(str)"></a>(2). gets_s(str)</h4><p>&emsp;在VS中以更安全形式使用    与gets雷同  </p><h4 id="3-fgetc-FILE-fp"><a href="#3-fgetc-FILE-fp" class="headerlink" title="(3).fgetc(FILE *fp);"></a>(3).fgetc(FILE *fp);</h4><p>&emsp;从fp所指文件中读取一个字符。</p><h4 id="4-fgets-str-100-fp"><a href="#4-fgets-str-100-fp" class="headerlink" title="(4).fgets(str,100,fp);"></a>(4).fgets(str,100,fp);</h4><p>&emsp;从由fp指出的文件中读取n-1个字符，并把它们存放到指定str字符串中去，最后加上一个字符串结束符’\0’</p><h4 id="5-fputs"><a href="#5-fputs" class="headerlink" title="(5).fputs"></a>(5).fputs</h4><h4 id="6-fread-buffer-size-count-fp"><a href="#6-fread-buffer-size-count-fp" class="headerlink" title="(6).fread(buffer,size,count,fp);"></a>(6).fread(buffer,size,count,fp);</h4><p>&emsp;buffer：存放数据缓冲区首地址（指针）<br>&emsp;size：以个数据块的字节数<br>&emsp;count：多少个数据块<br>&emsp;fp：文件指针</p><h4 id="7-fwrite-buffer-size-count-fp"><a href="#7-fwrite-buffer-size-count-fp" class="headerlink" title="(7).fwrite(buffer,size,count,fp)"></a>(7).fwrite(buffer,size,count,fp)</h4><p>&emsp;buffer:输出数字缓冲区的首地址</p><h2 id="三-链接"><a href="#三-链接" class="headerlink" title="三.链接"></a>三.链接</h2><p>[c语言操作链接]<br>(<a href="https://mp.weixin.qq.com/s?src=3&amp;timestamp=1578816460&amp;ver=1&amp;signature=4hyMUanj1SnNtBH7MCclQzBxh2TZijDM5z-fAGKDr7UibjjD2*cGDFTD85vWJDSU2ilmWZSW24GaNhzDeijjYgaAExZVf0Pvx3NO25zuegftIwndqjzYWTcxicCxiORRZw5h8b9mpZsbGMTX-y-yi7KP8jdC3SceQF7mB3Su4gQ=" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?src=3&amp;timestamp=1578816460&amp;ver=1&amp;signature=4hyMUanj1SnNtBH7MCclQzBxh2TZijDM5z-fAGKDr7UibjjD2*cGDFTD85vWJDSU2ilmWZSW24GaNhzDeijjYgaAExZVf0Pvx3NO25zuegftIwndqjzYWTcxicCxiORRZw5h8b9mpZsbGMTX-y-yi7KP8jdC3SceQF7mB3Su4gQ=</a>)</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;一-设置级标题&quot;&gt;&lt;a href=&quot;#一-设置级标题&quot; class=&quot;headerlink&quot; title=&quot;一. 设置级标题&quot;&gt;&lt;/a&gt;一. 设置级标题&lt;/h2&gt;&lt;p&gt; &amp;emsp;“## 级标题”&lt;br&gt; &amp;emsp; #的数量为标题的级数 &lt;/p&gt;
-&lt;h2 i
+        &lt;h2 id=&quot;一-文件操作方式&quot;&gt;&lt;a href=&quot;#一-文件操作方式&quot; class=&quot;headerlink&quot; title=&quot;一. 文件操作方式&quot;&gt;&lt;/a&gt;一. 文件操作方式&lt;/h2&gt;&lt;h3 id=&quot;1-文件打开——fopen&quot;&gt;&lt;a href=&quot;#1-文件打开——fopen&quot;
       
     
     </summary>
