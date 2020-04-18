@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MY NOTES</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-14T17:21:18.715Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>赵泽荣</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>myblog基础知识</title>
+    <link href="http://yoursite.com/2020/04/14/myblog%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/2020/04/14/myblog%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2020-04-14T15:11:31.000Z</published>
+    <updated>2020-04-14T17:21:18.715Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-hexo"><a href="#一-hexo" class="headerlink" title="一. hexo"></a>一. hexo</h1><p>&emsp;&emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br>本博客就是借由Hexo搭建而成。  </p><h1 id="二-博客搭建后文件夹简单说明"><a href="#二-博客搭建后文件夹简单说明" class="headerlink" title="二.博客搭建后文件夹简单说明"></a>二.博客搭建后文件夹简单说明</h1><h2 id="（1）-config-yml-网站的配置信息"><a href="#（1）-config-yml-网站的配置信息" class="headerlink" title="（1）_config.yml 网站的配置信息"></a>（1）_config.yml 网站的配置信息</h2><h2 id="（2）package-json-应用程序的信息，可删除"><a href="#（2）package-json-应用程序的信息，可删除" class="headerlink" title="（2）package.json 应用程序的信息，可删除"></a>（2）package.json 应用程序的信息，可删除</h2><h2 id="（3）sacffolds-模板文件夹。新建的文章会根据其建立文件。（可以先建好格式，之后统一以其为模板）"><a href="#（3）sacffolds-模板文件夹。新建的文章会根据其建立文件。（可以先建好格式，之后统一以其为模板）" class="headerlink" title="（3）sacffolds 模板文件夹。新建的文章会根据其建立文件。（可以先建好格式，之后统一以其为模板）"></a>（3）sacffolds 模板文件夹。新建的文章会根据其建立文件。<font color="#23B5F1">（可以先建好格式，之后统一以其为模板）</font></h2><h2 id="（4）-source-资源文件夹存放用户资源的地方"><a href="#（4）-source-资源文件夹存放用户资源的地方" class="headerlink" title="（4） source 资源文件夹存放用户资源的地方"></a>（4） source 资源文件夹存放用户资源的地方</h2><h2 id="（5）themes-主题文件夹"><a href="#（5）themes-主题文件夹" class="headerlink" title="（5）themes 主题文件夹"></a>（5）themes 主题文件夹</h2><h1 id="hexo的常用命令"><a href="#hexo的常用命令" class="headerlink" title="hexo的常用命令"></a>hexo的常用命令</h1><h2 id="（1）-hexo-new-lt-标题-gt-新建文章"><a href="#（1）-hexo-new-lt-标题-gt-新建文章" class="headerlink" title="（1） hexo new &lt;标题&gt; 新建文章"></a>（1） hexo new &lt;标题&gt; 新建文章</h2><h2 id="（2）hexo-generate-生成静态文件"><a href="#（2）hexo-generate-生成静态文件" class="headerlink" title="（2）hexo generate 生成静态文件"></a>（2）hexo generate 生成静态文件</h2><h2 id="（3）hexo-publish-发布草稿"><a href="#（3）hexo-publish-发布草稿" class="headerlink" title="（3）hexo publish 发布草稿"></a>（3）hexo publish 发布草稿</h2><h2 id="（4）hexo-server-启动服务器。默认情况下"><a href="#（4）hexo-server-启动服务器。默认情况下" class="headerlink" title="（4）hexo server 启动服务器。默认情况下"></a>（4）hexo server 启动服务器。默认情况下</h2><pre><code>访问网址为： http://localhost:4000/</code></pre><h2 id="（5）hexo-deploy-部署网站"><a href="#（5）hexo-deploy-部署网站" class="headerlink" title="（5）hexo deploy 部署网站"></a>（5）hexo deploy 部署网站</h2><h2 id="（6）hexo-clean-清除缓存文件"><a href="#（6）hexo-clean-清除缓存文件" class="headerlink" title="（6）hexo clean 清除缓存文件"></a>（6）hexo clean 清除缓存文件</h2><h2 id="emsp-emsp-更多操作可以点这里查询"><a href="#emsp-emsp-更多操作可以点这里查询" class="headerlink" title="&emsp;&emsp;更多操作可以点这里查询"></a>&emsp;&emsp;<a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">更多操作可以点这里查询</a></h2><h1 id="三-博客页面的主题修改"><a href="#三-博客页面的主题修改" class="headerlink" title="三.博客页面的主题修改"></a>三.博客页面的主题修改</h1><h3 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h3><p>可在官网里寻找自己满意的主题<br><a href="https://hexo.io/themes/" target="_blank" rel="noopener">点这里进入</a></p><h3 id="2-下载"><a href="#2-下载" class="headerlink" title="2.下载"></a>2.下载</h3><p>使用git bash，进入本地目录中。  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;yelog&#x2F;hexo-theme-3-hexo themes&#x2F;3theme</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">### 3.修改配置文件</span><br><span class="line">上述themes&#x2F;2theme指保存路径与克隆的文件名  </span><br><span class="line"> 打开当前目录下的“_config.yml”配置文件  </span><br><span class="line"> 找到theme： &amp;emsp;&amp;emsp;  改为theme：3theme</span><br><span class="line"> ### 4.调试并查看</span><br></pre></td></tr></table></figure><p> $ hexo server –debug<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 5.生成和发布</span><br></pre></td></tr></table></figure><br>$ hexo generate<br>$ hexo deploy<br> ```</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-hexo&quot;&gt;&lt;a href=&quot;#一-hexo&quot; class=&quot;headerlink&quot; title=&quot;一. hexo&quot;&gt;&lt;/a&gt;一. hexo&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>windows系统的云服务器发布网页</title>
+    <link href="http://yoursite.com/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/"/>
+    <id>http://yoursite.com/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/</id>
+    <published>2020-04-06T07:46:54.000Z</published>
+    <updated>2020-04-16T15:20:29.283Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-购买云服务器"><a href="#一-购买云服务器" class="headerlink" title="一.购买云服务器"></a>一.购买云服务器</h1><p>&emsp;&emsp;很多平台可以购买云服务器（如阿里云、腾讯云、华为云、百度云}  </p><h4 id="1-阿里云平台（https-www-aliyun-com-）"><a href="#1-阿里云平台（https-www-aliyun-com-）" class="headerlink" title="1. 阿里云平台（https://www.aliyun.com/）"></a>1. 阿里云平台（<a href="https://www.aliyun.com/）" target="_blank" rel="noopener">https://www.aliyun.com/）</a></h4><h4 id="2-腾讯云平台（https-cloud-tencent-com-）"><a href="#2-腾讯云平台（https-cloud-tencent-com-）" class="headerlink" title="2. 腾讯云平台（https://cloud.tencent.com/）"></a>2. 腾讯云平台（<a href="https://cloud.tencent.com/）" target="_blank" rel="noopener">https://cloud.tencent.com/）</a></h4><h1 id><a href="#" class="headerlink" title></a></h1><h1 id="-1"><a href="#-1" class="headerlink" title></a></h1><h1 id="二-云服务器设置"><a href="#二-云服务器设置" class="headerlink" title="二.云服务器设置"></a>二.云服务器设置</h1><p>我这里用的是阿里云服务器  </p><ol><li>在电脑左下角搜索框输入“远程桌面连接”，计算机输入自己云服务器提供的公网ip，用户名输入“Administrator”<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/20200406114205.png" alt="20200406114205.png">  </li><li>输入云服务器设置的密码，即可进入服务器 <h1 id="三-设置IIS"><a href="#三-设置IIS" class="headerlink" title="三.设置IIS"></a>三.设置IIS</h1></li><li>打开控制面板<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/1.png" alt="1.png">  </li><li>选择应用或关闭windows功能<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/2.png" alt="2.png">  </li><li>开启IIS共能（Internet Information Services）<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/3.png" alt="3.png">  </li><li>打开IIS<br>可在左下角搜索框直接搜索IIS，为了以后方便也可以直接在桌面设置快捷方式，或者固定至开始屏幕<h1 id="四-新建站点"><a href="#四-新建站点" class="headerlink" title="四.新建站点"></a>四.新建站点</h1></li><li>将建好的文件夹上传至服务器（可直接复制，在服务器粘贴）</li><li>打开IIS，新建一个站点。右击“网站”标签，选择添加网站，按下图进行设置<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/5.png" alt="5.png">  </li><li>设置完毕后，点击浏览，即可在本地浏览器看自己做的网页<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/6.png" alt="6.png">  <h1 id="五-设置防火墙"><a href="#五-设置防火墙" class="headerlink" title="五.设置防火墙"></a>五.设置防火墙</h1></li><li>打开 控制面板——&gt;系统和安全——&gt;windows defender防火墙，然后点开左边高级设置。如图<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/7.png" alt="7.png">  </li><li>配置入站规则，点击左边入站规则<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/8.png" alt="8.png"></li><li>单击 新建规则，规则类型选择端口<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/9.png" alt="9.png"></li><li>规则应用选择”TCP”,选择特定本地端口，端口输入80。继续点击下一步<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/10.png" alt="10.png"></li><li>选择允许连接，点击下一步<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/11.png" alt="11.png"></li><li>默认都选择，不需要修改，点击下一步<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/12.png" alt="12.png"></li><li>名称随便填一个，点击完成<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/13.png" alt="13.png"><h1 id="六-设置安全组"><a href="#六-设置安全组" class="headerlink" title="六.设置安全组"></a>六.设置安全组</h1></li><li>打开自已的控制台</li><li>打开自己购买的服务器实例<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/14.png" alt="14.png"></li><li>点击左侧本实例安全组<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/15.png" alt="15.png"></li><li>点击配置<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/16.png" alt="16.png"></li><li>选择添加安全组规则<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/17.png" alt="17.png"></li><li>端口范围填入“80/8081” 授权对象填入0.0.0.0/0<br><img src="/2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/18.png" alt="18.png"><h1 id="六-在浏览器输入自己的服务器公网域名就可以使用了！！！"><a href="#六-在浏览器输入自己的服务器公网域名就可以使用了！！！" class="headerlink" title="六.在浏览器输入自己的服务器公网域名就可以使用了！！！"></a>六.在浏览器输入自己的服务器公网域名就可以使用了！！！</h1></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-购买云服务器&quot;&gt;&lt;a href=&quot;#一-购买云服务器&quot; class=&quot;headerlink&quot; title=&quot;一.购买云服务器&quot;&gt;&lt;/a&gt;一.购买云服务器&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;很多平台可以购买云服务器（如阿里云、腾讯云、华为云、百度云}  &lt;/
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python note</title>
+    <link href="http://yoursite.com/2020/01/09/python-note/"/>
+    <id>http://yoursite.com/2020/01/09/python-note/</id>
+    <published>2020-01-09T06:38:01.000Z</published>
+    <updated>2020-04-14T17:14:16.844Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-markdown回忆"><a href="#一-markdown回忆" class="headerlink" title=" 一. markdown回忆 "></a><font color="red"> 一. markdown回忆 </font><font face="仿宋"><font color="#E6DE5"></font></font></h1><h3 id="a-标题（级标题）。。。。。。。。"><a href="#a-标题（级标题）。。。。。。。。" class="headerlink" title="a.标题（级标题）。。。。。。。。#"></a>a.标题（级标题）。。。。。。。。#</h3><h3 id="b-加粗、斜体、删除线。。。。。。"><a href="#b-加粗、斜体、删除线。。。。。。" class="headerlink" title="b.加粗、斜体、删除线。。。。。。*//~~"></a>b.加粗、斜体、删除线。。。。。。<em>*/</em>/~~</h3><h3 id="c-引用。。。。。。。。。。。。。-gt-gt"><a href="#c-引用。。。。。。。。。。。。。-gt-gt" class="headerlink" title="c.引用。。。。。。。。。。。。。&gt;&gt;"></a>c.引用。。。。。。。。。。。。。&gt;&gt;</h3><h3 id="d-分割线。。。。。。。。。。。。——-或-（三个以上）"><a href="#d-分割线。。。。。。。。。。。。——-或-（三个以上）" class="headerlink" title="d.分割线。。。。。。。。。。。。——-或***（三个以上）"></a>d.分割线。。。。。。。。。。。。——-或<strong>***</strong>（三个以上）</h3><h3 id="e-图片。。。。。。。。。。。。。。-图片alt-（图片地址’’图片title’’）"><a href="#e-图片。。。。。。。。。。。。。。-图片alt-（图片地址’’图片title’’）" class="headerlink" title="e.图片。。。。。。。。。。。。。。![图片alt]（图片地址’’图片title’’）"></a>e.图片。。。。。。。。。。。。。。![图片alt]（图片地址’’图片title’’）</h3><h3 id="f-超链接。。。。。。。。。。。。。-超链接名-（超链接地址-“超链接title”）"><a href="#f-超链接。。。。。。。。。。。。。-超链接名-（超链接地址-“超链接title”）" class="headerlink" title="f.超链接。。。。。。。。。。。。。[超链接名]（超链接地址 “超链接title”）"></a>f.超链接。。。。。。。。。。。。。[超链接名]（超链接地址 “超链接title”）</h3><h3 id="g-列表（无序、有序、嵌套）。。。。（-）（-）（-）-数字加点-三个空格"><a href="#g-列表（无序、有序、嵌套）。。。。（-）（-）（-）-数字加点-三个空格" class="headerlink" title="g.列表（无序、有序、嵌套）。。。。（- ）（+ ）（* ）/数字加点/三个空格"></a>g.列表（无序、有序、嵌套）。。。。（- ）（+ ）（* ）/数字加点/三个空格</h3><h3 id="h-代码。。。。。。。。。。。。。。（"><a href="#h-代码。。。。。。。。。。。。。。（" class="headerlink" title="h.代码。。。。。。。。。。。。。。（```)"></a>h.代码。。。。。。。。。。。。。。（```)</h3><h3 id="i-流程图（暂时不需要）"><a href="#i-流程图（暂时不需要）" class="headerlink" title="i.流程图（暂时不需要）"></a>i.流程图（暂时不需要）</h3><h3 id="j-字体-颜色-尺寸。。。。。。。。。-lt-—font-face-color-size-”字体-颜色-尺寸”—-gt-lt-—-font—-gt"><a href="#j-字体-颜色-尺寸。。。。。。。。。-lt-—font-face-color-size-”字体-颜色-尺寸”—-gt-lt-—-font—-gt" class="headerlink" title="j.字体/颜色/尺寸。。。。。。。。。&lt;—font face/color/size=”字体/颜色/尺寸”—&gt;&lt;—/font—&gt;"></a>j.字体/颜色/尺寸。。。。。。。。。&lt;—font face/color/size=”字体/颜色/尺寸”—&gt;&lt;—/font—&gt;</h3><h3 id="k-表格"><a href="#k-表格" class="headerlink" title="k.表格"></a>k.表格</h3><table><thead><tr><th>姓名</th><th align="center">技能</th><th align="right">排行</th></tr></thead><tbody><tr><td>刘备</td><td align="center">关羽</td><td align="right">张飞</td></tr><tr><td>孙悟空</td><td align="center">孙悟饭</td><td align="right">孙悟天</td></tr></tbody></table><h1 id="python笔记（正式内容）"><a href="#python笔记（正式内容）" class="headerlink" title="python笔记（正式内容）"></a>python笔记（正式内容）</h1><h2 id="1-列表"><a href="#1-列表" class="headerlink" title="1.列表"></a>1.列表</h2><p>(1).访问列表值<br>如list1=[a,b,c,d,e,f]<br>&emsp;&emsp;list1[3]=4 ; list[2:5]=[c,d,e,f]<br>(2).删除列表元素<br>&emsp;&emsp;a.   del list1[n] #n代表位置<br>&emsp;&emsp;b.   list1.remove(b) #元素<br>&emsp;&emsp;c.   list1.pop(n) #n代表位置<br>(3).添加元素<br>&emsp;&emsp;list1.append(g) #在列表最后一个位置添加元素</p><h2 id="2-模块"><a href="#2-模块" class="headerlink" title="2.模块"></a>2.模块</h2><h3 id="impirt导入模块"><a href="#impirt导入模块" class="headerlink" title="impirt导入模块"></a>impirt导入模块</h3><h3 id="time模块"><a href="#time模块" class="headerlink" title="time模块"></a>time模块</h3><h3 id="日历-calendar-模块"><a href="#日历-calendar-模块" class="headerlink" title="日历(calendar)模块"></a>日历(calendar)模块</h3><h3 id="日期时间（datetime）模块"><a href="#日期时间（datetime）模块" class="headerlink" title="日期时间（datetime）模块"></a>日期时间（datetime）模块</h3><h3 id="自定义模块"><a href="#自定义模块" class="headerlink" title="自定义模块"></a>自定义模块</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-markdown回忆&quot;&gt;&lt;a href=&quot;#一-markdown回忆&quot; class=&quot;headerlink&quot; title=&quot; 一. markdown回忆 &quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt; 一. markdown回忆 &lt;/font&gt;&lt;font f
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/08/21/hello-world/"/>
+    <id>http://yoursite.com/2019/08/21/hello-world/</id>
+    <published>2019-08-21T08:29:13.931Z</published>
+    <updated>2019-09-01T01:37:31.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="测试hexo-d"><a href="#测试hexo-d" class="headerlink" title="测试hexo d"></a>测试hexo d</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
