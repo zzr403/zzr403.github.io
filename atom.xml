@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-18T15:08:04.493Z</updated>
+  <updated>2020-04-20T06:59:03.391Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于arcgis时间动态图的制作</title>
+    <link href="http://yoursite.com/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/"/>
+    <id>http://yoursite.com/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/</id>
+    <published>2020-04-20T02:43:23.846Z</published>
+    <updated>2020-04-20T06:59:03.391Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript简介</title>
+    <link href="http://yoursite.com/2020/04/19/Javascript%E4%B8%80/"/>
+    <id>http://yoursite.com/2020/04/19/Javascript%E4%B8%80/</id>
+    <published>2020-04-19T04:15:43.000Z</published>
+    <updated>2020-04-19T07:44:53.574Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-JavaScript简介"><a href="#一-JavaScript简介" class="headerlink" title="一. JavaScript简介"></a>一. JavaScript简介</h1><ul><li>JavaScript是互联网最流行的脚本语言。可用于HTML和Web。</li><li>JavaScript常被运用于网页制作，要想学习JavaScript故需要html与css的基础。<ul><li>html定义网页内容</li><li>css定义网页布局</li><li>JavaScript定义网页行为<h1 id="二-使用编辑器"><a href="#二-使用编辑器" class="headerlink" title="二.使用编辑器"></a>二.使用编辑器</h1>HTML称为超文本标记语言，利用记事本即可打开，编写完成后将后缀更改为html格式即可在浏览器打开，到那时记事本不容易看出错误，所以可以用一些其他语言进行编辑  <h3 id="1-Dreamweaver"><a href="#1-Dreamweaver" class="headerlink" title="(1)  Dreamweaver"></a>(1)  Dreamweaver</h3>&emsp;&emsp;DW是Adobe公司的产品，可以很快地进行网站建设，并且具有可视化功能、代码检测功能、库也比较全。同时可以根据自己的喜好调整界面，很方便（我暂时用的即时DW）  <h3 id="2-其他的软件"><a href="#2-其他的软件" class="headerlink" title="(2)  其他的软件"></a>(2)  其他的软件</h3>（我也不是很清楚具体功能，就不详细介绍了，但是对于新手大部分编辑器几乎都能满足要求，详情可以自己百度）</li></ul><ul><li>Webstorm  10</li><li>Rendera</li><li>Notapad++</li><li>Sublime Text 3</li><li>Aptana Studio 3<h1 id="三-JavaScript基本用法"><a href="#三-JavaScript基本用法" class="headerlink" title="三.JavaScript基本用法"></a>三.JavaScript基本用法</h1></li></ul></li></ul><ol><li>脚本放于<script>与</script>之间  </li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">alert(&quot;我的第一个 JavaScript&quot;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure><ol start="2"><li>可放置在html页面的<body>或<head>部分中<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">.</span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.write(&quot;&lt;h1&gt;这是一个标题&lt;&#x2F;h1&gt;&quot;);</span><br><span class="line">document.write(&quot;&lt;p&gt;这是一个段落&lt;&#x2F;p&gt;&quot;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">.</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure></head></body></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-JavaScript简介&quot;&gt;&lt;a href=&quot;#一-JavaScript简介&quot; class=&quot;headerlink&quot; title=&quot;一. JavaScript简介&quot;&gt;&lt;/a&gt;一. JavaScript简介&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;JavaScript是互联网
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo主题设置———tags与categories的设置</title>
