@@ -344,7 +344,7 @@ body {
   position: relative;
 }
 #header-inner {
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 #banner {
