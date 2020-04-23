@@ -5,20 +5,24 @@
   
 
   
-  <title>hexo主题设置———tags与categories的设置 | MY NOTES</title>
+  <title>Arcgis使用遇到的问题及解决-1 | MY NOTES</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="注： 这里主要针对对于landscape主题的设置和更改   1. 设置主题（landscape）一般安装hexo，默认文件为landscape，但一些新手对于某些功能不是很明确  站点配置文件：_config.yml   主题配置文件：themes&#x2F;landscape&#x2F;_config.yml2. 标签设置（tags）(1) 在站点配置文件中查看是否有tag_dir: tags(2) 在主题配置">
+  <meta name="description" content="使用arcgis的小技巧1. 如何将地图按属性进行设置，根据属性要求显示部分要素A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？ B.目的：我想要除了小于500人的省区不可见C.方法：可以采用构建器进行操作 打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”D.解决效果注：当然这是我做完为">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo主题设置———tags与categories的设置">
-<meta property="og:url" content="http://yoursite.com/2020/04/18/hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%B8%80/index.html">
+<meta property="og:title" content="Arcgis使用遇到的问题及解决-1">
+<meta property="og:url" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/index.html">
 <meta property="og:site_name" content="MY NOTES">
-<meta property="og:description" content="注： 这里主要针对对于landscape主题的设置和更改   1. 设置主题（landscape）一般安装hexo，默认文件为landscape，但一些新手对于某些功能不是很明确  站点配置文件：_config.yml   主题配置文件：themes&#x2F;landscape&#x2F;_config.yml2. 标签设置（tags）(1) 在站点配置文件中查看是否有tag_dir: tags(2) 在主题配置">
+<meta property="og:description" content="使用arcgis的小技巧1. 如何将地图按属性进行设置，根据属性要求显示部分要素A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？ B.目的：我想要除了小于500人的省区不可见C.方法：可以采用构建器进行操作 打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”D.解决效果注：当然这是我做完为">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-18T13:40:53.000Z">
-<meta property="article:modified_time" content="2020-04-18T15:08:04.493Z">
+<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%9E%84%E5%BB%BA%E5%99%A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%95%88%E6%9E%9C1.png">
+<meta property="article:published_time" content="2020-04-23T01:44:36.000Z">
+<meta property="article:modified_time" content="2020-04-23T03:12:26.032Z">
 <meta property="article:author" content="赵泽荣">
-<meta property="article:tag" content="网站">
+<meta property="article:tag" content="计算机">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png">
   
     <link rel="alternate" href="../../../../atom.xml" title="MY NOTES" type="application/atom+xml">
   
@@ -67,12 +71,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="w-hexo主题设置一" class="article article-type-w" itemscope itemprop="blogPost">
+        <section id="main"><article id="arcgi-Arcgis使用遇到的问题及解决-1" class="article article-type-arcgi" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="" class="article-date">
-  <time datetime="2020-04-18T13:40:53.000Z" itemprop="datePublished">2020-04-18</time>
+  <time datetime="2020-04-23T01:44:36.000Z" itemprop="datePublished">2020-04-23</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="../../../../categories/gis/">gis</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -81,7 +89,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      hexo主题设置———tags与categories的设置
+      Arcgis使用遇到的问题及解决-1
     </h1>
   
 
@@ -89,24 +97,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>注： 这里主要针对对于landscape主题的设置和更改 </p>
-<hr>
-<h2 id="1-设置主题（landscape）"><a href="#1-设置主题（landscape）" class="headerlink" title="1. 设置主题（landscape）"></a>1. 设置主题（landscape）</h2><p>一般安装hexo，默认文件为landscape，但一些新手对于某些功能不是很明确</p>
-<ul>
-<li>站点配置文件：_config.yml  </li>
-<li>主题配置文件：themes/landscape/_config.yml<h2 id="2-标签设置（tags）"><a href="#2-标签设置（tags）" class="headerlink" title="2. 标签设置（tags）"></a>2. 标签设置（tags）</h2>(1) 在站点配置文件中查看是否有tag_dir: tags<br>(2) 在主题配置文件中查看是否有tags: /tags<br>(3)编辑站点的source/tags/index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2015-10-20 06:49:50</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-<h2 id="3-分类设置（categories）"><a href="#3-分类设置（categories）" class="headerlink" title="3.分类设置（categories）"></a>3.分类设置（categories）</h2>(1) 在站点配置文件中查看是否有category_dir: categoriess<br>(2) 在主题配置文件中查看是否有categories: /categories<br>(3)编辑站点的source/categories/index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2015-10-20 06:49:50</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-</li>
+        <h1 id="使用arcgis的小技巧"><a href="#使用arcgis的小技巧" class="headerlink" title="使用arcgis的小技巧"></a>使用arcgis的小技巧</h1><h2 id="1-如何将地图按属性进行设置，根据属性要求显示部分要素"><a href="#1-如何将地图按属性进行设置，根据属性要求显示部分要素" class="headerlink" title="1. 如何将地图按属性进行设置，根据属性要求显示部分要素"></a><font color="red">1. 如何将地图按属性进行设置，根据属性要求显示部分要素</font></h2><h3 id="A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？"><a href="#A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？" class="headerlink" title="A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？"></a>A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？</h3><p><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png" alt="疫情确诊人数"></p>
+<h3 id="B-目的：我想要除了小于500人的省区不可见"><a href="#B-目的：我想要除了小于500人的省区不可见" class="headerlink" title="B.目的：我想要除了小于500人的省区不可见"></a>B.目的：我想要除了小于500人的省区不可见</h3><h3 id="C-方法：可以采用构建器进行操作"><a href="#C-方法：可以采用构建器进行操作" class="headerlink" title="C.方法：可以采用构建器进行操作"></a>C.方法：可以采用构建器进行操作</h3><ul>
+<li><h3 id="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"><a href="#打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”" class="headerlink" title="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"></a>打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%9E%84%E5%BB%BA%E5%99%A8.png" alt="构建器"><h3 id="D-解决效果"><a href="#D-解决效果" class="headerlink" title="D.解决效果"></a>D.解决效果</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%95%88%E6%9E%9C1.png" alt="效果图"><br><font color="blue">注：当然这是我做完为了做笔记截的图，但操作过程木有问题</font></li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/18/hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%B8%80/" data-id="ck987oltm0002uothb21vghc8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/" data-id="ck9c96cy200000othdoozgv5h" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E7%BD%91%E7%AB%99/" rel="tag">网站</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
 
     </footer>
   </div>
@@ -114,19 +116,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../19/Javascript%E4%B8%80/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Javascript简介
-        
-      </div>
-    </a>
   
-  
-    <a href="../../14/myblog%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">myblog基础知识</div>
+      <div class="article-nav-title">基于arcgis时间动态图的制作</div>
     </a>
   
 </nav>
@@ -145,7 +138,7 @@
       <ul>
         
           <li>
-            <a href="../../23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/">Arcgis使用遇到的问题及解决-1</a>
+            <a href="">Arcgis使用遇到的问题及解决-1</a>
           </li>
         
           <li>
@@ -157,7 +150,7 @@
           </li>
         
           <li>
-            <a href="">hexo主题设置———tags与categories的设置</a>
+            <a href="../../18/hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%B8%80/">hexo主题设置———tags与categories的设置</a>
           </li>
         
           <li>

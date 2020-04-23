@@ -66,6 +66,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="arcgi-Arcgis使用遇到的问题及解决-1" class="article article-type-arcgi" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/" class="article-date">
+  <time datetime="2020-04-23T01:44:36.000Z" itemprop="datePublished">2020-04-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="categories/gis/">gis</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/">Arcgis使用遇到的问题及解决-1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用arcgis的小技巧"><a href="#使用arcgis的小技巧" class="headerlink" title="使用arcgis的小技巧"></a>使用arcgis的小技巧</h1><h2 id="1-如何将地图按属性进行设置，根据属性要求显示部分要素"><a href="#1-如何将地图按属性进行设置，根据属性要求显示部分要素" class="headerlink" title="1. 如何将地图按属性进行设置，根据属性要求显示部分要素"></a><font color="red">1. 如何将地图按属性进行设置，根据属性要求显示部分要素</font></h2><h3 id="A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？"><a href="#A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？" class="headerlink" title="A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？"></a>A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？</h3><p><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png" alt="疫情确诊人数"></p>
+<h3 id="B-目的：我想要除了小于500人的省区不可见"><a href="#B-目的：我想要除了小于500人的省区不可见" class="headerlink" title="B.目的：我想要除了小于500人的省区不可见"></a>B.目的：我想要除了小于500人的省区不可见</h3><h3 id="C-方法：可以采用构建器进行操作"><a href="#C-方法：可以采用构建器进行操作" class="headerlink" title="C.方法：可以采用构建器进行操作"></a>C.方法：可以采用构建器进行操作</h3><ul>
+<li><h3 id="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"><a href="#打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”" class="headerlink" title="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"></a>打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%9E%84%E5%BB%BA%E5%99%A8.png" alt="构建器"><h3 id="D-解决效果"><a href="#D-解决效果" class="headerlink" title="D.解决效果"></a>D.解决效果</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%95%88%E6%9E%9C1.png" alt="效果图"><br><font color="blue">注：当然这是我做完为了做笔记截的图，但操作过程木有问题</font></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/" data-id="ck9c96cy200000othdoozgv5h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-基于arcgis时间动态图的制作" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/" class="article-date">
@@ -90,7 +136,7 @@
       
         <h1 id="一-简述"><a href="#一-简述" class="headerlink" title="一.简述"></a>一.简述</h1><ul>
 <li>地理信息系统是在计算机硬件、软件得支持下，对整个或部分地球标称空间中得有关地理分布数据进行采集、储存、管理、运算、分析、显示和描述得技术系统  </li>
-<li><font color="#204071">这里以中国肺炎疫情时间动态图为例</font><h1 id="二-操作说明"><a href="#二-操作说明" class="headerlink" title="二. 操作说明"></a>二. 操作说明</h1><h2 id="1-大家开Arcgis-map，并新建地图"><a href="#1-大家开Arcgis-map，并新建地图" class="headerlink" title="1.大家开Arcgis map，并新建地图"></a>1.大家开Arcgis map，并新建地图</h2><h2 id="2-导入中国省级地图数据"><a href="#2-导入中国省级地图数据" class="headerlink" title="2.导入中国省级地图数据"></a>2.导入中国省级地图数据</h2><img src="/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/1.jpg" alt="导入数据"></li>
+<li><font color="#204071">这里以中国肺炎疫情时间动态图为例</font><h1 id="二-操作说明"><a href="#二-操作说明" class="headerlink" title="二. 操作说明"></a>二. 操作说明</h1><h2 id="1-打开Arcgis-map，并新建地图"><a href="#1-打开Arcgis-map，并新建地图" class="headerlink" title="1.打开Arcgis map，并新建地图"></a>1.打开Arcgis map，并新建地图</h2><h2 id="2-导入中国省级地图数据"><a href="#2-导入中国省级地图数据" class="headerlink" title="2.导入中国省级地图数据"></a>2.导入中国省级地图数据</h2><img src="/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/1.jpg" alt="导入数据"></li>
 <li><h3 id="注-打开后如属性表有乱码问题，则说明编码方式不正确，在源数据得文件里写入一个cpg文件，在内表明编码方式"><a href="#注-打开后如属性表有乱码问题，则说明编码方式不正确，在源数据得文件里写入一个cpg文件，在内表明编码方式" class="headerlink" title="注:打开后如属性表有乱码问题，则说明编码方式不正确，在源数据得文件里写入一个cpg文件，在内表明编码方式"></a><font color="red">注:打开后如属性表有乱码问题，则说明编码方式不正确，在源数据得文件里写入一个cpg文件，在内表明编码方式</font></h3><img src="/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.jpg" alt="导入数据"><h2 id="3-编辑源数据属性表：删除找到的源数据得无用字段，保留必须字段（如fid、地区名称等）"><a href="#3-编辑源数据属性表：删除找到的源数据得无用字段，保留必须字段（如fid、地区名称等）" class="headerlink" title="3.编辑源数据属性表：删除找到的源数据得无用字段，保留必须字段（如fid、地区名称等）"></a>3.编辑源数据属性表：删除找到的源数据得无用字段，保留必须字段（如fid、地区名称等）</h2><h2 id="4-编辑自己得属性表：以保留的字段为关键字段在excel编辑属性表，编辑好后要以xsl格式保存，否则arcgis会不可识别"><a href="#4-编辑自己得属性表：以保留的字段为关键字段在excel编辑属性表，编辑好后要以xsl格式保存，否则arcgis会不可识别" class="headerlink" title="4.编辑自己得属性表：以保留的字段为关键字段在excel编辑属性表，编辑好后要以xsl格式保存，否则arcgis会不可识别"></a>4.编辑自己得属性表：以保留的字段为关键字段在excel编辑属性表，编辑好后要以xsl格式保存，否则arcgis会不可识别</h2><h2 id="5-导入属性表：点击-emsp-添加数据-emsp-找到设置xsl表的位置，点击添加"><a href="#5-导入属性表：点击-emsp-添加数据-emsp-找到设置xsl表的位置，点击添加" class="headerlink" title="5.导入属性表：点击&emsp; 添加数据 &emsp;找到设置xsl表的位置，点击添加"></a>5.导入属性表：点击&emsp; <strong>添加数据</strong> &emsp;找到设置xsl表的位置，点击添加</h2></li>
 <li><h3 id="注：要预先在arcgis中关联文件夹（目录-文件夹连接-选择要关联的文件夹）"><a href="#注：要预先在arcgis中关联文件夹（目录-文件夹连接-选择要关联的文件夹）" class="headerlink" title="注：要预先在arcgis中关联文件夹（目录-文件夹连接-选择要关联的文件夹）"></a><font color="red">注：要预先在arcgis中关联文件夹（<strong>目录-文件夹连接-选择要关联的文件夹</strong>）</font></h3><h2 id="6-连接字段"><a href="#6-连接字段" class="headerlink" title="6. 连接字段"></a>6. 连接字段</h2>(1). <strong>选择导入的地图右击————“连接和关联”————”连接“</strong><br>(2). <strong>选择连接的表以及基础字段（指基于什么字段连接，如各省名称）</strong><br>(3). <strong>点击“验证连接”，连接成功后点击“确定”即可</strong></li>
 <li><h3 id="注：如为防止之后不出现问题最好将连接后的地图进行一次导出（右击地图——点击“数据”——“导出数据”——选择“数据框”——选择导出的路径——新建名称——点击“确定”，之后的地图可以采用导出的新地图进行操作）"><a href="#注：如为防止之后不出现问题最好将连接后的地图进行一次导出（右击地图——点击“数据”——“导出数据”——选择“数据框”——选择导出的路径——新建名称——点击“确定”，之后的地图可以采用导出的新地图进行操作）" class="headerlink" title="注：如为防止之后不出现问题最好将连接后的地图进行一次导出（右击地图——点击“数据”——“导出数据”——选择“数据框”——选择导出的路径——新建名称——点击“确定”，之后的地图可以采用导出的新地图进行操作）"></a><font color="red">注：如为防止之后不出现问题最好将连接后的地图进行一次导出（右击地图——点击“数据”——“导出数据”——选择“数据框”——选择导出的路径——新建名称——点击“确定”，之后的地图可以采用导出的新地图进行操作）</font></h3><img src="/2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/%E8%BF%9E%E6%8E%A5.jpg" alt="连接"><h2 id="7-字段转置"><a href="#7-字段转置" class="headerlink" title="7.字段转置"></a>7.字段转置</h2></li>
@@ -418,6 +464,10 @@
       <ul>
         
           <li>
+            <a href="2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/">Arcgis使用遇到的问题及解决-1</a>
+          </li>
+        
+          <li>
             <a href="2020/04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/">基于arcgis时间动态图的制作</a>
           </li>
         
@@ -433,10 +483,6 @@
             <a href="2020/04/14/myblog%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">myblog基础知识</a>
           </li>
         
-          <li>
-            <a href="2020/04/06/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8F%91%E5%B8%83%E7%BD%91%E9%A1%B5/">windows系统的云服务器发布网页</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -446,7 +492,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="categories/gis/">gis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -456,7 +502,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E7%BD%91%E7%AB%99/" rel="tag">网站</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" rel="tag">计算机语言</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" rel="tag">计算机部署</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E7%BD%91%E7%AB%99/" rel="tag">网站</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" rel="tag">计算机语言</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" rel="tag">计算机部署</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -466,7 +512,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="tags/%E7%BD%91%E7%AB%99/" style="font-size: 20px;">网站</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 10px;">计算机</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">计算机语言</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" style="font-size: 10px;">计算机部署</a>
+      <a href="tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="tags/%E7%BD%91%E7%AB%99/" style="font-size: 20px;">网站</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 20px;">计算机</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">计算机语言</a> <a href="tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" style="font-size: 10px;">计算机部署</a>
     </div>
   </div>
 
@@ -475,7 +521,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/04/">April 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
