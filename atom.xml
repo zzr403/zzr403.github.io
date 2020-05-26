@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-23T03:12:26.032Z</updated>
+  <updated>2020-05-26T16:01:13.778Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ArcGIS制图及出图小技巧—以土地利用图为例</title>
+    <link href="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/"/>
+    <id>http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/</id>
+    <published>2020-05-26T09:27:34.000Z</published>
+    <updated>2020-05-26T16:01:13.778Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一-概述"><a href="#一-概述" class="headerlink" title="一. 概述"></a>一. 概述</h1><h2 id="这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面："><a href="#这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面：" class="headerlink" title="这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面："></a>这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面：</h2><ul><li><h2 id="Arcgis取色"><a href="#Arcgis取色" class="headerlink" title="Arcgis取色"></a>Arcgis取色</h2><ul><li><h2 id="颜色应用"><a href="#颜色应用" class="headerlink" title="颜色应用"></a>颜色应用</h2></li><li><h2 id="数据框调整"><a href="#数据框调整" class="headerlink" title="数据框调整"></a>数据框调整</h2></li><li><h2 id="出图"><a href="#出图" class="headerlink" title="出图"></a>出图</h2></li></ul></li></ul><h1 id="二-操作"><a href="#二-操作" class="headerlink" title="二. 操作"></a>二. 操作</h1><h2 id="1-ArcGIS取色"><a href="#1-ArcGIS取色" class="headerlink" title="1. ArcGIS取色"></a>1. ArcGIS取色</h2><p>如过发现自己的地图颜色老是配的不好可以采用其他已经制作好的地图颜色，可以通过 <font color="red"><strong>外部取色器</strong> </font>或者 <font color="red"><strong>arcgis内部取色器</strong></font> 进行取材。</p><h3 id="（1）-外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。"><a href="#（1）-外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。" class="headerlink" title="（1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。"></a>（1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。</h3><pre><code>链接：https://pan.baidu.com/s/1xKyPLq7yqVFJ5I-wueqsrQ 提取码：iv6w </code></pre><p> <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/1.png" alt="颜色选取器"> </p><h3 id="（2）-ArcGIS内部取色器：属于arcgis内部的功能，操作如下"><a href="#（2）-ArcGIS内部取色器：属于arcgis内部的功能，操作如下" class="headerlink" title="（2）.ArcGIS内部取色器：属于arcgis内部的功能，操作如下"></a>（2）.ArcGIS内部取色器：属于arcgis内部的功能，操作如下</h3><p> <font color="lightblue"> <strong>A.打开ARCGIS</strong></font><br>  <font color="lightblue"> <strong>B.拖入具有色彩的图片</strong></font><br>    如同拖入shp格式的方式将图片拖入arcgis<br>  <font color="lightblue"> <strong>C.打开取色器</strong> </font><br>    第一次操作需要在菜单栏【自定义】—【自定义模式】—【命令】—搜索【取色器】— 将取色器拖到菜单栏上<br>      <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%8F%96%E8%89%B2%E5%99%A8.bmp" alt="取色器"><br>  <font color="lightblue"> <strong>D.选取颜色，并命名</strong></font><br>   如下图选中湖泊的颜色并备注，单击确定<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/拾色器使用.png" width="60%">  </p><p><font color="lightblue"> <strong>E.查看是否设置成功</strong></font><br>  设置好后可以打开【自定义】—【样式管理器】—【颜色】可以看到我们设置好的颜色<br>  <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/颜色样式.png" width="50%"></p><h2 id="2-颜色应用"><a href="#2-颜色应用" class="headerlink" title="2.颜色应用"></a>2.颜色应用</h2><h3 id="1-修改颜色"><a href="#1-修改颜色" class="headerlink" title="(1)修改颜色"></a>(1)修改颜色</h3><p>  当选取颜色后，对图层符号系统设置颜色时，选择填充就可以看到我添加的样式被放置在颜色表前面的位置，选择即可。</p><h3 id="（2）批量修改"><a href="#（2）批量修改" class="headerlink" title="（2）批量修改"></a>（2）批量修改</h3><p>若制作多年分布对比图，若单独制作的话颜色回事随机的，可以做好一年的然后另外两个图层采用导入的方式设置<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/批量设置颜色.png" width="50%"></p><h2 id="3-数据框调整"><a href="#3-数据框调整" class="headerlink" title="3. 数据框调整"></a>3. 数据框调整</h2><p>为了多年数据进行对比，可以及新建多个数据框</p><h3 id="（1）适应纸张的调整"><a href="#（1）适应纸张的调整" class="headerlink" title="（1）适应纸张的调整"></a>（1）适应纸张的调整</h3><pre><code>在ArcGIS出图时，需要设置纸张大小，将显示的数据框放到纸张框中，导出纸张框内部的图。</code></pre><h3 id="（2）数据框的排版"><a href="#（2）数据框的排版" class="headerlink" title="（2）数据框的排版"></a>（2）数据框的排版</h3><p>选中建好数据框，集体右击，分布，将数据框设置成相同大小，选中单独数据框-设置全图显示  通过【对齐】—【顶端对齐】 【分布】—【水平分布】设置，<br>排版时也可以打开标尺进行设置，将数据框对齐。<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/出图1.png" width="50%"></p><h3 id="3-图例设置"><a href="#3-图例设置" class="headerlink" title="(3) 图例设置"></a>(3) 图例设置</h3><p>如下图，选择【插入】-【图例】，单击下一步直至完成，可以看到插入的图例，但是图例有一些不需要的部分，可以打开图例的数据框中图层的属性将不需要的标注删除即可，同时添加标注可以<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/图例设置1.png" width="50%"><br>右击图例，设置项目，将列设置为”n”列，”n”自己设置。可以看到如下效果<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/图例2.png" width="50%"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一-概述&quot;&gt;&lt;a href=&quot;#一-概述&quot; class=&quot;headerlink&quot; title=&quot;一. 概述&quot;&gt;&lt;/a&gt;一. 概述&lt;/h1&gt;&lt;h2 id=&quot;这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面：&quot;&gt;&lt;a href=&quot;#这里讲述关于ArcGIS制图
+      
+    
+    </summary>
+    
+    
+    
+      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Arcgis使用遇到的问题及解决-1</title>
@@ -89,33 +113,6 @@
     
     
       <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo主题设置———tags与categories的设置</title>
-    <link href="http://yoursite.com/2020/04/18/hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%B8%80/"/>
-    <id>http://yoursite.com/2020/04/18/hexo%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%B8%80/</id>
-    <published>2020-04-18T13:40:53.000Z</published>
-    <updated>2020-04-18T15:08:04.493Z</updated>
-    
-    <content type="html"><![CDATA[<hr><p>注： 这里主要针对对于landscape主题的设置和更改 </p><hr><h2 id="1-设置主题（landscape）"><a href="#1-设置主题（landscape）" class="headerlink" title="1. 设置主题（landscape）"></a>1. 设置主题（landscape）</h2><p>一般安装hexo，默认文件为landscape，但一些新手对于某些功能不是很明确</p><ul><li>站点配置文件：_config.yml  </li><li>主题配置文件：themes/landscape/_config.yml<h2 id="2-标签设置（tags）"><a href="#2-标签设置（tags）" class="headerlink" title="2. 标签设置（tags）"></a>2. 标签设置（tags）</h2>(1) 在站点配置文件中查看是否有tag_dir: tags<br>(2) 在主题配置文件中查看是否有tags: /tags<br>(3)编辑站点的source/tags/index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2015-10-20 06:49:50</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure><h2 id="3-分类设置（categories）"><a href="#3-分类设置（categories）" class="headerlink" title="3.分类设置（categories）"></a>3.分类设置（categories）</h2>(1) 在站点配置文件中查看是否有category_dir: categoriess<br>(2) 在主题配置文件中查看是否有categories: /categories<br>(3)编辑站点的source/categories/index.md<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2015-10-20 06:49:50</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;hr&gt;
-&lt;p&gt;注： 这里主要针对对于landscape主题的设置和更改 &lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;1-设置主题（landscape）&quot;&gt;&lt;a href=&quot;#1-设置主题（landscape）&quot; class=&quot;headerlink&quot; title=&quot;1. 设置主题（lan
-      
-    
-    </summary>
-    
-    
-    
-      <category term="网站" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   

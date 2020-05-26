@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>ArcGIS制图及出图小技巧—以土地利用图为例 | MY NOTES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一. 概述这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面： Arcgis取色 颜色应用 数据框调整 出图    二. 操作1. ArcGIS取色如过发现自己的地图颜色老是配的不好可以采用其他已经制作好的地图颜色，可以通过 外部取色器 或者 arcgis内部取色器 进行取材。 （1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ArcGIS制图及出图小技巧—以土地利用图为例">
+<meta property="og:url" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/index.html">
+<meta property="og:site_name" content="MY NOTES">
+<meta property="og:description" content="一. 概述这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面： Arcgis取色 颜色应用 数据框调整 出图    二. 操作1. ArcGIS取色如过发现自己的地图颜色老是配的不好可以采用其他已经制作好的地图颜色，可以通过 外部取色器 或者 arcgis内部取色器 进行取材。 （1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/1.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%8F%96%E8%89%B2%E5%99%A8.bmp">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E6%8B%BE%E8%89%B2%E5%99%A8%E4%BD%BF%E7%94%A8.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E9%A2%9C%E8%89%B2%E6%A0%B7%E5%BC%8F.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E6%89%B9%E9%87%8F%E8%AE%BE%E7%BD%AE%E9%A2%9C%E8%89%B2.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%87%BA%E5%9B%BE1.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%9B%BE%E4%BE%8B%E8%AE%BE%E7%BD%AE1.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%9B%BE%E4%BE%8B2.png">
+<meta property="article:published_time" content="2020-05-26T09:27:34.000Z">
+<meta property="article:modified_time" content="2020-05-26T16:01:13.778Z">
+<meta property="article:author" content="赵泽荣">
+<meta property="article:tag" content="计算机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/1.png">
+  
+    <link rel="alternate" href="../../../../atom.xml" title="MY NOTES" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="../../../../css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="../../../../index.html" id="logo">MY NOTES</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="../../../../index.html">home</a>
+        
+          <a class="main-nav-link" href="../../../../archives">archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="../../../../atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ArcGIS制图及出图小技巧—以土地利用图为例" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="" class="article-date">
+  <time datetime="2020-05-26T09:27:34.000Z" itemprop="datePublished">2020-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ArcGIS制图及出图小技巧—以土地利用图为例
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一-概述"><a href="#一-概述" class="headerlink" title="一. 概述"></a>一. 概述</h1><h2 id="这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面："><a href="#这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面：" class="headerlink" title="这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面："></a>这里讲述关于ArcGIS制图出土小技巧，主要包括以下方面：</h2><ul>
+<li><h2 id="Arcgis取色"><a href="#Arcgis取色" class="headerlink" title="Arcgis取色"></a>Arcgis取色</h2><ul>
+<li><h2 id="颜色应用"><a href="#颜色应用" class="headerlink" title="颜色应用"></a>颜色应用</h2></li>
+<li><h2 id="数据框调整"><a href="#数据框调整" class="headerlink" title="数据框调整"></a>数据框调整</h2></li>
+<li><h2 id="出图"><a href="#出图" class="headerlink" title="出图"></a>出图</h2></li>
+</ul>
+</li>
+</ul>
+<h1 id="二-操作"><a href="#二-操作" class="headerlink" title="二. 操作"></a>二. 操作</h1><h2 id="1-ArcGIS取色"><a href="#1-ArcGIS取色" class="headerlink" title="1. ArcGIS取色"></a>1. ArcGIS取色</h2><p>如过发现自己的地图颜色老是配的不好可以采用其他已经制作好的地图颜色，可以通过 <font color="red"><strong>外部取色器</strong> </font>或者 <font color="red"><strong>arcgis内部取色器</strong></font> 进行取材。</p>
+<h3 id="（1）-外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。"><a href="#（1）-外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。" class="headerlink" title="（1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。"></a>（1）.外部取色器：好多大佬为了作图方便，制作的颜色抓取工具，这些在网上可以搜到安装包，可以直接查看颜色的值。下图为我的一个颜色提取工具。下面是网盘链接。</h3><pre><code>链接：https://pan.baidu.com/s/1xKyPLq7yqVFJ5I-wueqsrQ 提取码：iv6w </code></pre><p> <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/1.png" alt="颜色选取器"> </p>
+<h3 id="（2）-ArcGIS内部取色器：属于arcgis内部的功能，操作如下"><a href="#（2）-ArcGIS内部取色器：属于arcgis内部的功能，操作如下" class="headerlink" title="（2）.ArcGIS内部取色器：属于arcgis内部的功能，操作如下"></a>（2）.ArcGIS内部取色器：属于arcgis内部的功能，操作如下</h3><p> <font color="lightblue"> <strong>A.打开ARCGIS</strong></font><br>  <font color="lightblue"> <strong>B.拖入具有色彩的图片</strong></font><br>    如同拖入shp格式的方式将图片拖入arcgis<br>  <font color="lightblue"> <strong>C.打开取色器</strong> </font><br>    第一次操作需要在菜单栏【自定义】—【自定义模式】—【命令】—搜索【取色器】— 将取色器拖到菜单栏上<br>      <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/%E5%8F%96%E8%89%B2%E5%99%A8.bmp" alt="取色器"><br>  <font color="lightblue"> <strong>D.选取颜色，并命名</strong></font><br>   如下图选中湖泊的颜色并备注，单击确定<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/拾色器使用.png" width="60%">  </p>
+<p><font color="lightblue"> <strong>E.查看是否设置成功</strong></font><br>  设置好后可以打开【自定义】—【样式管理器】—【颜色】可以看到我们设置好的颜色<br>  <img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/颜色样式.png" width="50%"></p>
+<h2 id="2-颜色应用"><a href="#2-颜色应用" class="headerlink" title="2.颜色应用"></a>2.颜色应用</h2><h3 id="1-修改颜色"><a href="#1-修改颜色" class="headerlink" title="(1)修改颜色"></a>(1)修改颜色</h3><p>  当选取颜色后，对图层符号系统设置颜色时，选择填充就可以看到我添加的样式被放置在颜色表前面的位置，选择即可。</p>
+<h3 id="（2）批量修改"><a href="#（2）批量修改" class="headerlink" title="（2）批量修改"></a>（2）批量修改</h3><p>若制作多年分布对比图，若单独制作的话颜色回事随机的，可以做好一年的然后另外两个图层采用导入的方式设置<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/批量设置颜色.png" width="50%"></p>
+<h2 id="3-数据框调整"><a href="#3-数据框调整" class="headerlink" title="3. 数据框调整"></a>3. 数据框调整</h2><p>为了多年数据进行对比，可以及新建多个数据框</p>
+<h3 id="（1）适应纸张的调整"><a href="#（1）适应纸张的调整" class="headerlink" title="（1）适应纸张的调整"></a>（1）适应纸张的调整</h3><pre><code>在ArcGIS出图时，需要设置纸张大小，将显示的数据框放到纸张框中，导出纸张框内部的图。</code></pre><h3 id="（2）数据框的排版"><a href="#（2）数据框的排版" class="headerlink" title="（2）数据框的排版"></a>（2）数据框的排版</h3><p>选中建好数据框，集体右击，分布，将数据框设置成相同大小，选中单独数据框-设置全图显示  通过【对齐】—【顶端对齐】 【分布】—【水平分布】设置，<br>排版时也可以打开标尺进行设置，将数据框对齐。<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/出图1.png" width="50%"></p>
+<h3 id="3-图例设置"><a href="#3-图例设置" class="headerlink" title="(3) 图例设置"></a>(3) 图例设置</h3><p>如下图，选择【插入】-【图例】，单击下一步直至完成，可以看到插入的图例，但是图例有一些不需要的部分，可以打开图例的数据框中图层的属性将不需要的标注删除即可，同时添加标注可以<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/图例设置1.png" width="50%"><br>右击图例，设置项目，将列设置为”n”列，”n”自己设置。可以看到如下效果<br><img src="/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/图例2.png" width="50%"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/" data-id="ckao3yrg90001zcth4fk33aam" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="../../../04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Arcgis使用遇到的问题及解决-1</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="">ArcGIS制图及出图小技巧—以土地利用图为例</a>
+          </li>
+        
+          <li>
+            <a href="../../../04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/">Arcgis使用遇到的问题及解决-1</a>
+          </li>
+        
+          <li>
+            <a href="../../../04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/">基于arcgis时间动态图的制作</a>
+          </li>
+        
+          <li>
+            <a href="../../../04/19/Javascript%E4%B8%80/">Javascript简介</a>
+          </li>
+        
+          <li>
+            <a href="../../../04/14/myblog%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">myblog基础知识</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/gis/">gis</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/hexo%E5%8D%9A%E5%AE%A2/">hexo博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Javascript/" rel="tag">Javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E7%BD%91%E7%AB%99/" rel="tag">网站</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" rel="tag">计算机语言</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" rel="tag">计算机部署</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="../../../../tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="../../../../tags/%E7%BD%91%E7%AB%99/" style="font-size: 10px;">网站</a> <a href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 20px;">计算机</a> <a href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">计算机语言</a> <a href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8%E7%BD%B2/" style="font-size: 10px;">计算机部署</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/05/">May 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/04/">April 2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2020/01/">January 2020</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 赵泽荣<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="../../../../index.html" class="mobile-nav-link">home</a>
+  
+    <a href="../../../../archives" class="mobile-nav-link">archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="../../../../fancybox/jquery.fancybox.css">
+
+  
+<script src="../../../../fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="../../../../js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
