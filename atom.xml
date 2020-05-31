@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-26T16:01:13.778Z</updated>
+  <updated>2020-05-31T10:42:21.030Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Arcgis_Web AppBuilder for ArcGIS安装及说明</title>
+    <link href="http://yoursite.com/2020/05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2020/05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/</id>
+    <published>2020-05-31T07:11:13.000Z</published>
+    <updated>2020-05-31T10:42:21.030Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天，我接触到了arcgis web端的AppBuilder，就整理一下关于AppBuilder的安装</p><h1 id="一-简介"><a href="#一-简介" class="headerlink" title="一. 简介"></a>一. 简介</h1><h2 id="1-描述"><a href="#1-描述" class="headerlink" title="1.描述"></a>1.描述</h2><p><font color="orange"><strong>Web AppBuilder for ArcGIS</strong> 是一种直观的所见即所得式 (WYSIWYG) 应用程序，可用于构建 2D 和 3D web 应用程序，而无需编写一行代码。它所包括的强大工具可用来配置功能完备的 HTML 应用程序。添加地图和工具时，您可以在应用程序中看到这些地图和工具并立即使用。</font>  </p><h2 id="2-功能"><a href="#2-功能" class="headerlink" title="2.功能"></a>2.功能</h2><ul><li>创建能在所有设备上运行的 HTML/JavaScript 应用程序</li><li>使用即用型微件构建所需应用程序</li><li>使用可配置的主题自定义应用程序的外观</li><li>在线托管应用程序或在自己的服务器上运行应用程序</li><li>创建自定义应用程序模板</li></ul><hr><center><font size="5px"><b>上述是官方描述的，总之就是</b></font></center><center><font color="deepred" size="5px"><b>功能强，操作简单，不需要代码，好上手&emsp;+_+</b></font></center><p>现在我把安装方式和视频教程的网盘链接放上    </p><pre><code>https://pan.baidu.com/s/1Kz-Wlp58KVP-NC8hN5V01g 提取码：gq8k</code></pre><div align="center"><img src="/2020/05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/1.png" width="80%"> </div>   <h2 id="二-安装方法"><a href="#二-安装方法" class="headerlink" title="二.安装方法"></a>二.安装方法</h2><pre><code>这是官网安装的链接，讲述的很全，我这里简单叙述一下https://developers.arcgis.com/web-appbuilder/guide/getstarted.htm#ESRI_SECTION1_F2CE6567CB854E4AB43F08EB64B3D7AE</code></pre><h3 id="（1）解压“arcgis-web-appbuilder-2-13-zip”文件"><a href="#（1）解压“arcgis-web-appbuilder-2-13-zip”文件" class="headerlink" title="（1）解压“arcgis-web-appbuilder-2.13.zip”文件"></a>（1）解压“arcgis-web-appbuilder-2.13.zip”文件</h3><h3 id="（2）双击其中的”startup-bat”文件，电脑会自动打开命令提示窗口，同时会在默认浏览器中启动Web-AppBuilder服务器，其中带有http：-您的计算机名称-：3344-webappBuilder"><a href="#（2）双击其中的”startup-bat”文件，电脑会自动打开命令提示窗口，同时会在默认浏览器中启动Web-AppBuilder服务器，其中带有http：-您的计算机名称-：3344-webappBuilder" class="headerlink" title="（2）双击其中的”startup.bat”文件，电脑会自动打开命令提示窗口，同时会在默认浏览器中启动Web AppBuilder服务器，其中带有http：//[您的计算机名称]：3344/webappBuilder"></a>（2）双击其中的”startup.bat”文件，电脑会自动打开命令提示窗口，同时会在默认浏览器中启动Web AppBuilder服务器，其中带有<font color="red">http：//[您的计算机名称]：3344/webappBuilder</font></h3><pre><code>小提示：这里据说需要Node.js 服务器才可以，但是我直接成功了，可能之前装过，如果打不开可以找一个教程</code></pre><h3 id="（3）若成功的话，在浏览器中可以发现有两个框需要输入内容"><a href="#（3）若成功的话，在浏览器中可以发现有两个框需要输入内容" class="headerlink" title="（3）若成功的话，在浏览器中可以发现有两个框需要输入内容"></a>（3）若成功的话，在浏览器中可以发现有两个框需要输入内容</h3><ul><li>指定门户url</li><li>应用 ID  <h3 id="上述是意味着需要连接到我们arcgis-online中，也就是需要有一个arcgis-online的账户，可以注册一个。"><a href="#上述是意味着需要连接到我们arcgis-online中，也就是需要有一个arcgis-online的账户，可以注册一个。" class="headerlink" title="上述是意味着需要连接到我们arcgis online中，也就是需要有一个arcgis online的账户，可以注册一个。"></a>上述是意味着需要连接到我们arcgis online中，也就是需要有一个arcgis online的账户，可以注册一个。</h3><h3 id="（4）对arcgis-online设置应用程序"><a href="#（4）对arcgis-online设置应用程序" class="headerlink" title="（4）对arcgis online设置应用程序"></a>（4）对arcgis online设置应用程序</h3></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">转到内容页的&quot;我的内容&quot;选项卡，单击&quot;添加项目&quot;并选择&quot;应用程序&quot;。</span><br><span class="line"></span><br><span class="line">    在&quot;添加应用程序&quot;对话框中，输入以下参数。</span><br><span class="line"></span><br><span class="line">        键入————选择应用程序类型。</span><br><span class="line">        选择————&quot;准备使用&quot;</span><br><span class="line">        API————选择 JavaScript。</span><br><span class="line">        URL————[输入https：&#x2F;&#x2F;[您的计算机名称]：3344&#x2F;webappbuilder。</span><br><span class="line"></span><br><span class="line">提示：</span><br><span class="line">如果Web AppBuilder与计算机名称以及域名一起启动，请输入http：&#x2F;&#x2F;[您的计算机名称]。您的域*：3344&#x2F;网络应用程序构建器。</span><br><span class="line"></span><br><span class="line">标题—————输入对您有意义的内容，例如ArcGIS 的 Web 应用程序构建器。</span><br><span class="line">类别—————分配将用于组织和对应用进行分组的类别。这样，当用户搜索项目时，您可以重点搜索项目。</span><br><span class="line">标记–————输入易于搜索的内容，如Web AppBuilder。</span><br></pre></td></tr></table></figure><div align="center"><img src="/2020/05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/2.png" width="60%"> </div>  <h3 id="5-返回一开始网页，指定门户可以填自己online地址"><a href="#5-返回一开始网页，指定门户可以填自己online地址" class="headerlink" title="(5)返回一开始网页，指定门户可以填自己online地址"></a>(5)返回一开始网页，指定门户可以填自己online地址</h3><div align="center">如https://xxxx.maps.arcgis.com</div><h3 id="6-设置应用ID"><a href="#6-设置应用ID" class="headerlink" title="(6)设置应用ID"></a>(6)设置应用ID</h3><p> A.arcgis online中打开我的内容 ,选择我们建立的构建器，点击右方的“…” ,选择“查看项目详细信息”</p><img src="/2020/05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/3.png" width="60%">    <p>B.单击”设置”选项卡。向下滚动到”应用注册”部分，然后单击”注册”。<br>对于ArcGIS 的门户，单击应用注册部分中的注册。</p><pre><code>在&quot;注册&quot;对话框上应用类型————请保留默认值重定向 URI————请输入http：//[您的计算机名称]或https：//[您的计算机名称]  请注意，具有 HTTP 和 HTTPS 协议的 URI 被区分为两个不同的 URI。</code></pre><div align="center"><img src="https://developers.arcgis.com/web-appbuilder/guide/GUID-F64E7321-1EBB-44F2-9E2C-7E8DCC50FD00-web.png" width="60%"></div>C.单击注册，在应用注册下复制应用 ID，粘贴到Web AppBuilder的文本框中，然后单击"继续"  <h1 id="再次说明，具体可以参考以下链接，包括教程"><a href="#再次说明，具体可以参考以下链接，包括教程" class="headerlink" title="再次说明，具体可以参考以下链接，包括教程"></a><font color="deepred">再次说明，具体可以参考以下链接，包括教程</font></h1><pre><code>https://developers.arcgis.com/web-appbuilder/guide/build-your-first-app.htm</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天，我接触到了arcgis web端的AppBuilder，就整理一下关于AppBuilder的安装&lt;/p&gt;
+&lt;h1 id=&quot;一-简介&quot;&gt;&lt;a href=&quot;#一-简介&quot; class=&quot;headerlink&quot; title=&quot;一. 简介&quot;&gt;&lt;/a&gt;一. 简介&lt;/h1&gt;&lt;h2 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>ArcGIS制图及出图小技巧—以土地利用图为例</title>
