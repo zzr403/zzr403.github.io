@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-31T10:42:21.030Z</updated>
+  <updated>2020-07-10T15:11:12.311Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我在Arcgis遇到的愚蠢问题1</title>
+    <link href="http://yoursite.com/2020/07/10/%E6%88%91%E5%9C%A8Arcgis%E9%81%87%E5%88%B0%E7%9A%84%E6%84%9A%E8%A0%A2%E9%97%AE%E9%A2%981/"/>
+    <id>http://yoursite.com/2020/07/10/%E6%88%91%E5%9C%A8Arcgis%E9%81%87%E5%88%B0%E7%9A%84%E6%84%9A%E8%A0%A2%E9%97%AE%E9%A2%981/</id>
+    <published>2020-07-10T14:41:23.000Z</published>
+    <updated>2020-07-10T15:11:12.311Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能"><a href="#今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能" class="headerlink" title="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能"></a>今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能</h3><h1 id="一-功能（只要针对我刚了解的一些小技巧）"><a href="#一-功能（只要针对我刚了解的一些小技巧）" class="headerlink" title="一.功能（只要针对我刚了解的一些小技巧）"></a>一.功能（只要针对我刚了解的一些小技巧）</h1><h2 id="1-定义查询"><a href="#1-定义查询" class="headerlink" title="1.定义查询"></a>1.定义查询</h2><h3 id="之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值"><a href="#之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值" class="headerlink" title="之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值"></a>之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值</h3><h2 id="2-img图片去黑框以及合并"><a href="#2-img图片去黑框以及合并" class="headerlink" title="2.img图片去黑框以及合并"></a>2.img图片去黑框以及合并</h2><h2 id="3-快速批量关闭字段"><a href="#3-快速批量关闭字段" class="headerlink" title="3.快速批量关闭字段"></a>3.快速批量关闭字段</h2><h2 id="4-快速批量删除字段"><a href="#4-快速批量删除字段" class="headerlink" title="4.快速批量删除字段"></a>4.快速批量删除字段</h2><h2 id="5-快速通过字段计算器合并多人属性表编辑"><a href="#5-快速通过字段计算器合并多人属性表编辑" class="headerlink" title="5.快速通过字段计算器合并多人属性表编辑"></a>5.快速通过字段计算器合并多人属性表编辑</h2><h2 id="6-使用空间连接将点图层属性赋予包含其面图层（或相反）"><a href="#6-使用空间连接将点图层属性赋予包含其面图层（或相反）" class="headerlink" title="6.使用空间连接将点图层属性赋予包含其面图层（或相反）"></a>6.使用空间连接将点图层属性赋予包含其面图层（或相反）</h2><h2 id="7-如何快速计算图斑面积"><a href="#7-如何快速计算图斑面积" class="headerlink" title="7.如何快速计算图斑面积"></a>7.如何快速计算图斑面积</h2><h2 id="8-如何导入符号库"><a href="#8-如何导入符号库" class="headerlink" title="8.如何导入符号库"></a>8.如何导入符号库</h2><h2 id="9-定义查询-not-like的使用"><a href="#9-定义查询-not-like的使用" class="headerlink" title="9.定义查询 not like的使用"></a>9.定义查询 not like的使用</h2><h2 id="10-属性表通过转换导出excel格式"><a href="#10-属性表通过转换导出excel格式" class="headerlink" title="10.属性表通过转换导出excel格式"></a>10.属性表通过转换导出excel格式</h2><h1 id="二-操作注意的一些环节"><a href="#二-操作注意的一些环节" class="headerlink" title="二. 操作注意的一些环节"></a>二. 操作注意的一些环节</h1><h2 id="1-导出图层或进行一些空间计算之前一定要注意以下几个方面"><a href="#1-导出图层或进行一些空间计算之前一定要注意以下几个方面" class="headerlink" title="1. 导出图层或进行一些空间计算之前一定要注意以下几个方面"></a>1. 导出图层或进行一些空间计算之前一定要注意以下几个方面</h2><pre><code>A. 是否有字段存在选择状态  B.是否定义查询存在未删除的定义，（或属性表中的按属性选择）  C.字段是否有部分存在关闭状态  D.属性表是否有未解除的关联属性表</code></pre><h2 id="2-在进行字段替换时不出现不想关字段替换小技巧"><a href="#2-在进行字段替换时不出现不想关字段替换小技巧" class="headerlink" title="2.在进行字段替换时不出现不想关字段替换小技巧"></a>2.在进行字段替换时不出现不想关字段替换小技巧</h2><pre><code>字段替换前关闭与其不想关的字段</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能&quot;&gt;&lt;a href=&quot;#今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能&quot; class=&quot;h
+      
+    
+    </summary>
+    
+    
+    
+      <category term="计算机" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Arcgis_Web AppBuilder for ArcGIS安装及说明</title>

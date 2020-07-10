@@ -5,24 +5,20 @@
   
 
   
-  <title>Arcgis使用遇到的问题及解决-1 | MY NOTES</title>
+  <title>我在Arcgis遇到的愚蠢问题1 | MY NOTES</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用arcgis的小技巧1. 如何将地图按属性进行设置，根据属性要求显示部分要素A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？ B.目的：我想要除了小于500人的省区不可见C.方法：可以采用构建器进行操作 打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”D.解决效果注：当然这是我做完为">
+  <meta name="description" content="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能一.功能（只要针对我刚了解的一些小技巧）1.定义查询之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值2.img图片去黑框以及合并3.快速批量关闭字段4.快速批量删除字段5.快速通过字段计算器合并多人属性表编辑6.使用空间连接将点图层属性赋予包含其面图层（或相反）7.如何">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Arcgis使用遇到的问题及解决-1">
-<meta property="og:url" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/index.html">
+<meta property="og:title" content="我在Arcgis遇到的愚蠢问题1">
+<meta property="og:url" content="http://yoursite.com/2020/07/10/%E6%88%91%E5%9C%A8Arcgis%E9%81%87%E5%88%B0%E7%9A%84%E6%84%9A%E8%A0%A2%E9%97%AE%E9%A2%981/index.html">
 <meta property="og:site_name" content="MY NOTES">
-<meta property="og:description" content="使用arcgis的小技巧1. 如何将地图按属性进行设置，根据属性要求显示部分要素A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？ B.目的：我想要除了小于500人的省区不可见C.方法：可以采用构建器进行操作 打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”D.解决效果注：当然这是我做完为">
+<meta property="og:description" content="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能一.功能（只要针对我刚了解的一些小技巧）1.定义查询之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值2.img图片去黑框以及合并3.快速批量关闭字段4.快速批量删除字段5.快速通过字段计算器合并多人属性表编辑6.使用空间连接将点图层属性赋予包含其面图层（或相反）7.如何">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%9E%84%E5%BB%BA%E5%99%A8.png">
-<meta property="og:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%95%88%E6%9E%9C1.png">
-<meta property="article:published_time" content="2020-04-23T01:44:36.000Z">
-<meta property="article:modified_time" content="2020-05-31T10:36:14.376Z">
+<meta property="article:published_time" content="2020-07-10T14:41:23.000Z">
+<meta property="article:modified_time" content="2020-07-10T15:11:12.311Z">
 <meta property="article:author" content="赵泽荣">
 <meta property="article:tag" content="计算机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png">
   
     <link rel="alternate" href="../../../../atom.xml" title="MY NOTES" type="application/atom+xml">
   
@@ -71,16 +67,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-Arcgis使用遇到的问题及解决-1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-我在Arcgis遇到的愚蠢问题1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="" class="article-date">
-  <time datetime="2020-04-23T01:44:36.000Z" itemprop="datePublished">2020-04-23</time>
+  <time datetime="2020-07-10T14:41:23.000Z" itemprop="datePublished">2020-07-10</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/gis/">gis</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -89,7 +81,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Arcgis使用遇到的问题及解决-1
+      我在Arcgis遇到的愚蠢问题1
     </h1>
   
 
@@ -97,15 +89,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="使用arcgis的小技巧"><a href="#使用arcgis的小技巧" class="headerlink" title="使用arcgis的小技巧"></a>使用arcgis的小技巧</h1><h2 id="1-如何将地图按属性进行设置，根据属性要求显示部分要素"><a href="#1-如何将地图按属性进行设置，根据属性要求显示部分要素" class="headerlink" title="1. 如何将地图按属性进行设置，根据属性要求显示部分要素"></a><font color="red">1. 如何将地图按属性进行设置，根据属性要求显示部分要素</font></h2><h3 id="A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？"><a href="#A-问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（-gt-500人）各省分布图怎么做呢？" class="headerlink" title="A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？"></a>A.问题：在制作疫情图时，这是一份基于中国的3月20日的累计确诊分布图，但是为了做一份（&gt;500人）各省分布图怎么做呢？</h3><p><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E7%B4%AF%E8%AE%A1%E7%A1%AE%E8%AF%8A.png" alt="疫情确诊人数"></p>
-<h3 id="B-目的：我想要除了小于500人的省区不可见"><a href="#B-目的：我想要除了小于500人的省区不可见" class="headerlink" title="B.目的：我想要除了小于500人的省区不可见"></a>B.目的：我想要除了小于500人的省区不可见</h3><h3 id="C-方法：可以采用构建器进行操作"><a href="#C-方法：可以采用构建器进行操作" class="headerlink" title="C.方法：可以采用构建器进行操作"></a>C.方法：可以采用构建器进行操作</h3><ul>
-<li><h3 id="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"><a href="#打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”" class="headerlink" title="打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”"></a>打开gis，右击“图层”——选择“属性”——选择“定义查询”——点击“查询构建器”</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%9E%84%E5%BB%BA%E5%99%A8.png" alt="构建器"><h3 id="D-解决效果"><a href="#D-解决效果" class="headerlink" title="D.解决效果"></a>D.解决效果</h3><img src="/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/%E6%95%88%E6%9E%9C1.png" alt="效果图"><br><font color="blue">注：当然这是我做完为了做笔记截的图，但操作过程木有问题</font></li>
-</ul>
-
+        <h3 id="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能"><a href="#今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能" class="headerlink" title="今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能"></a>今天我要整理一下自己在工作中遇到的关于Arcgis中的一些因为自己不注意而增加工作量的问题，以及一些实用的功能</h3><h1 id="一-功能（只要针对我刚了解的一些小技巧）"><a href="#一-功能（只要针对我刚了解的一些小技巧）" class="headerlink" title="一.功能（只要针对我刚了解的一些小技巧）"></a>一.功能（只要针对我刚了解的一些小技巧）</h1><h2 id="1-定义查询"><a href="#1-定义查询" class="headerlink" title="1.定义查询"></a>1.定义查询</h2><h3 id="之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值"><a href="#之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值" class="headerlink" title="之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值"></a>之前讲过定义查询的功能，可以通过sql语句快速查询属性表某些需要的值</h3><h2 id="2-img图片去黑框以及合并"><a href="#2-img图片去黑框以及合并" class="headerlink" title="2.img图片去黑框以及合并"></a>2.img图片去黑框以及合并</h2><h2 id="3-快速批量关闭字段"><a href="#3-快速批量关闭字段" class="headerlink" title="3.快速批量关闭字段"></a>3.快速批量关闭字段</h2><h2 id="4-快速批量删除字段"><a href="#4-快速批量删除字段" class="headerlink" title="4.快速批量删除字段"></a>4.快速批量删除字段</h2><h2 id="5-快速通过字段计算器合并多人属性表编辑"><a href="#5-快速通过字段计算器合并多人属性表编辑" class="headerlink" title="5.快速通过字段计算器合并多人属性表编辑"></a>5.快速通过字段计算器合并多人属性表编辑</h2><h2 id="6-使用空间连接将点图层属性赋予包含其面图层（或相反）"><a href="#6-使用空间连接将点图层属性赋予包含其面图层（或相反）" class="headerlink" title="6.使用空间连接将点图层属性赋予包含其面图层（或相反）"></a>6.使用空间连接将点图层属性赋予包含其面图层（或相反）</h2><h2 id="7-如何快速计算图斑面积"><a href="#7-如何快速计算图斑面积" class="headerlink" title="7.如何快速计算图斑面积"></a>7.如何快速计算图斑面积</h2><h2 id="8-如何导入符号库"><a href="#8-如何导入符号库" class="headerlink" title="8.如何导入符号库"></a>8.如何导入符号库</h2><h2 id="9-定义查询-not-like的使用"><a href="#9-定义查询-not-like的使用" class="headerlink" title="9.定义查询 not like的使用"></a>9.定义查询 not like的使用</h2><h2 id="10-属性表通过转换导出excel格式"><a href="#10-属性表通过转换导出excel格式" class="headerlink" title="10.属性表通过转换导出excel格式"></a>10.属性表通过转换导出excel格式</h2><h1 id="二-操作注意的一些环节"><a href="#二-操作注意的一些环节" class="headerlink" title="二. 操作注意的一些环节"></a>二. 操作注意的一些环节</h1><h2 id="1-导出图层或进行一些空间计算之前一定要注意以下几个方面"><a href="#1-导出图层或进行一些空间计算之前一定要注意以下几个方面" class="headerlink" title="1. 导出图层或进行一些空间计算之前一定要注意以下几个方面"></a>1. 导出图层或进行一些空间计算之前一定要注意以下几个方面</h2><pre><code>A. 是否有字段存在选择状态  
+B.是否定义查询存在未删除的定义，（或属性表中的按属性选择）  
+C.字段是否有部分存在关闭状态  
+D.属性表是否有未解除的关联属性表</code></pre><h2 id="2-在进行字段替换时不出现不想关字段替换小技巧"><a href="#2-在进行字段替换时不出现不想关字段替换小技巧" class="headerlink" title="2.在进行字段替换时不出现不想关字段替换小技巧"></a>2.在进行字段替换时不出现不想关字段替换小技巧</h2><pre><code>字段替换前关闭与其不想关的字段</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/" data-id="ckauxjtdr00073cthenrabwrg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/07/10/%E6%88%91%E5%9C%A8Arcgis%E9%81%87%E5%88%B0%E7%9A%84%E6%84%9A%E8%A0%A2%E9%97%AE%E9%A2%981/" data-id="ckcgd3i510000moth9dncgg6k" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
@@ -116,19 +107,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../../05/26/ArcGIS%E5%88%B6%E5%9B%BE%E5%8F%8A%E5%87%BA%E5%9B%BE%E5%B0%8F%E6%8A%80%E5%B7%A7%E2%80%94%E4%BB%A5%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E5%9B%BE%E4%B8%BA%E4%BE%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          ArcGIS制图及出图小技巧—以土地利用图为例
-        
-      </div>
-    </a>
   
-  
-    <a href="../../20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../../05/31/Arcgis-Web-AppBuilder-for-ArcGIS%E5%AE%89%E8%A3%85%E5%8F%8A%E8%AF%B4%E6%98%8E/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">基于arcgis时间动态图的制作</div>
+      <div class="article-nav-title">Arcgis_Web AppBuilder for ArcGIS安装及说明</div>
     </a>
   
 </nav>
@@ -147,7 +129,7 @@
       <ul>
         
           <li>
-            <a href="../../../07/10/%E6%88%91%E5%9C%A8Arcgis%E9%81%87%E5%88%B0%E7%9A%84%E6%84%9A%E8%A0%A2%E9%97%AE%E9%A2%981/">我在Arcgis遇到的愚蠢问题1</a>
+            <a href="">我在Arcgis遇到的愚蠢问题1</a>
           </li>
         
           <li>
@@ -159,11 +141,11 @@
           </li>
         
           <li>
-            <a href="">Arcgis使用遇到的问题及解决-1</a>
+            <a href="../../../04/23/Arcgis%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3-1/">Arcgis使用遇到的问题及解决-1</a>
           </li>
         
           <li>
-            <a href="../../20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/">基于arcgis时间动态图的制作</a>
+            <a href="../../../04/20/%E5%9F%BA%E4%BA%8Earcgis%E6%97%B6%E9%97%B4%E5%8A%A8%E6%80%81%E5%9B%BE%E7%9A%84%E5%88%B6%E4%BD%9C/">基于arcgis时间动态图的制作</a>
           </li>
         
       </ul>
