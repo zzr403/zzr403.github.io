@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-10T15:11:12.311Z</updated>
+  <updated>2020-08-31T13:49:57.718Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>天宝水准仪DINI数据传输遇到问题</title>
+    <link href="http://yoursite.com/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/</id>
+    <published>2020-08-31T09:55:23.000Z</published>
+    <updated>2020-08-31T13:49:57.718Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客"><a href="#背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客" class="headerlink" title="背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客 "></a><font color="#333300">背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客 </font></h4><p><br><hr></p><h1 id="1-电脑传输软件安装（Date-Transfer）"><a href="#1-电脑传输软件安装（Date-Transfer）" class="headerlink" title="1. 电脑传输软件安装（Date Transfer）"></a>1. 电脑传输软件安装（Date Transfer）</h1><pre><code>之前电脑安装了几个版本，分别为1.47，1.56，具体原因不清楚，最终通过1.56版本成功传输数据。</code></pre><h1 id="2-软件操作"><a href="#2-软件操作" class="headerlink" title="2.软件操作"></a>2.软件操作</h1><pre><code>天宝电子水准仪只能通过固定的数据传输线传输数据，同时电脑需要安装Date Transfer软件，软件的图表如下图：</code></pre><img src="/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/1.png">  <br><br>(1) .双击软件打开，再进入<font color="red"><b>“仪器设备”</b></font>  <br><br><img src="/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/2.png"><br>(2). 进入仪器设备窗口后,我们需要选择<font color="red">“新建”</font>，选择类型，类习惯要选择包括USB方式的类型，故再选择<font color="red">“Trimble DiNi(USB)设备”</font>，单击<font color="red">“确认”</font><br><br><img src="/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/3.png"><br><br>(3). 随便为设备输入一个名称，如<font color="red">“USB传输”</font>，之后回到主页面  <br><br><center><img src="/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/4.png"></center><br>(4). 选择已建好的可通过USB的设备，点击右边的连接图标，如果连接成功后点击"添加"，进行数据传输  <h2 id="“如果失败，运气好按以下方法检查应该没有问题，运气不好放一首“凉凉”吧"><a href="#“如果失败，运气好按以下方法检查应该没有问题，运气不好放一首“凉凉”吧" class="headerlink" title="“如果失败，运气好按以下方法检查应该没有问题，运气不好放一首“凉凉”吧"></a><font color="red">“如果失败，运气好按以下方法检查应该没有问题，运气不好放一首“凉凉”吧</font></h2><center><img src="/2020/08/31/%E5%A4%A9%E5%AE%9D%E6%B0%B4%E5%87%86%E4%BB%AADINI%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98/5.png"></center><br><h1 id="3-安装遇到问题检查方法"><a href="#3-安装遇到问题检查方法" class="headerlink" title="3.安装遇到问题检查方法"></a>3.安装遇到问题检查方法</h1><p> <b><font size="3"><br>(1). 检查传输线是否接好   </font></b></p><p>(2).检查电脑驱动是否成功安装，检查方式通过打开我的电脑，右击“此电脑“图表，打开“管理”，选择“设备管理器”，打开后看天宝传输驱动是否成功安装，我接触的可能有两种情况  <br><br><br>A. 识别出这个驱动，但是上面有感叹号并提示驱动不可用不能用，可以选择卸载驱动，在重新插入电子水准仪，电脑会自动安装，但可能仅限于win10<br>B.第二种可能电脑不能识别此驱动的位置，需要手动将驱动选择到Date Transfer的文件夹，安装好之后就可以用了  <br><br><br>(3)一般大部分可能是第二种情况，但如果不行可能是安装包的原因，可以试试别的版本<b></b></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客&quot;&gt;&lt;a href=&quot;#背景说明：时隔一年再次用到天宝型电子水准仪，再次回顾当年第一次进行数据传输时的恐惧，为了以后不再被其支配，写下这篇博客&quot; 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="测绘" scheme="http://yoursite.com/tags/%E6%B5%8B%E7%BB%98/"/>
+    
+  </entry>
   
   <entry>
     <title>我在Arcgis遇到的愚蠢问题1</title>
